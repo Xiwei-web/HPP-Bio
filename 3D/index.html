@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>3D Force Graph - Click to Focus + Text Nodes + Arrows</title>
+  <style>
+    body { margin: 0; }
+    #3d-graph { width: 100vw; height: 100vh; }
+  </style>
+
+  <script src="//cdn.jsdelivr.net/npm/3d-force-graph"></script>
+</head>
+
+<body>
+  <div id="3d-graph"></div>
+
+  <script type="module">
+    import SpriteText from "https://esm.sh/three-spritetext";
+
+    const elem = document.getElementById('3d-graph');
+
+    const Graph = new ForceGraph3D(elem)
+      .jsonUrl('../blocks3.json')
+      .nodeAutoColorBy('user')
+      .nodeLabel(node => `${node.user}: ${node.description}`)
+      // ✅ 添加箭头
+      .linkDirectionalArrowLength(3.5)
+      .linkDirectionalArrowRelPos(1)
+      // ✅ 改为文字节点
+      .nodeThreeObject(node => {
+        const sprite = new SpriteText(node.user); // 显示用户名或任意字段
+        sprite.color = node.color;                // 与自动颜色一致
+        sprite.material.depthWrite = false;       // 文字背景透明
+        sprite.textHeight = 8;                    // 🔸 控制字体大小（默认约8~10）
+        sprite.center.y = -0.5;                   // 稍微调整垂直位置
+        return sprite;
+      })
+      .nodeThreeObjectExtend(true)
+      // ==============================
+      // 悬停时改变鼠标样式
+      .onNodeHover(node => { elem.style.cursor = node ? 'pointer' : null; })
+      // 点击聚焦（支持 Ctrl/Cmd/中键打开链接）
+      .onNodeClick((node, event) => {
+        const url = `https://bl.ocks.org/${node.user}/${node.id}`;
+
+        // 若按住 Ctrl/Cmd 或用中键，则保持原来“新开标签页”的行为
+        if (event && (event.ctrlKey || event.metaKey || event.button === 1)) {
+          window.open(url, '_blank');
+          return;
+        }
+
+        // —— 否则执行聚焦 —— //
+        const distance = 300;
+        const x = node.x || 0, y = node.y || 0, z = node.z || 0;
+        const distRatio = 1 + distance / Math.hypot(x, y, z || 1);
+        const newPos = (x || y || z)
+          ? { x: x * distRatio, y: y * distRatio, z: z * distRatio }
+          : { x: distance, y: distance, z: distance };
+
+        Graph.cameraPosition(newPos, node, 1500);
+      });
+  </script>
+</body>
+</html>
