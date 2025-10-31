@@ -1,21 +1,24 @@
+
+<!doctype html>
+<html>
 <head>
-  <style> body { margin: 0; } </style>
-
-  <script src="//cdn.jsdelivr.net/npm/3d-force-graph"></script>
-<!--  <script src="../../dist/3d-force-graph.js"></script>-->
+  <meta charset="utf-8" />
+  <title>3D Graph</title>
+  <style>
+    html, body { margin: 0; height: 100%; }
+    #graph { width: 100vw; height: 100vh; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/3d-force-graph"></script>
 </head>
-
 <body>
-
-  <div id="3d-graph"></div>
-
+  <div id="graph"></div>
   <script>
-    const elem = document.getElementById('3d-graph');
-
-    const Graph = new ForceGraph3D(elem)
+    const elem = document.getElementById('graph');
+    const Graph = ForceGraph3D()(elem)
       .jsonUrl('./blocks.json')
       .nodeAutoColorBy('user')
-      .nodeLabel(node => `${node.user}: ${node.description}`)
-      .onNodeClick(node => window.open(`https://bl.ocks.org/${node.user}/${node.id}`, '_blank'));
+      .nodeLabel(n => `${n.user}: ${n.description}`)
+      .onNodeClick(n => window.open(`https://bl.ocks.org/${n.user}/${n.id}`, '_blank'));
   </script>
 </body>
+</html>
