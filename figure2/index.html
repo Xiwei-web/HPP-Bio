@@ -103,7 +103,7 @@
 
     // ====== 加载数据 -> 构建邻接 -> 渲染 ======
     // 保持了您原有的 fetch 和数据处理逻辑
-    fetch('../hpp_causal_network_dense.json')
+    fetch('../figure2/hpp_causal_network_dense.json')
       .then(r => r.json())
       .then(data => {
         const nodeById = new Map(data.nodes.map(n => [n.id, n]));
