@@ -1,0 +1,127 @@
+<head>
+  <meta charset="utf-8" />
+  <style> body { margin: 0; } </style>
+  <script src="//cdn.jsdelivr.net/npm/3d-force-graph"></script>
+</head>
+
+<body>
+  <div id="3d-graph"></div>
+
+  <script type="module">
+    import SpriteText from "https://esm.sh/three-spritetext";
+
+    // ========= 分组配色：同组同色，不同组不同色 =========
+    const PALETTE = [
+      '#1f77b4','#ff7f0e','#2ca02c','#d62728','#9467bd',
+      '#8c564b','#e377c2','#7f7f7f','#bcbd22','#17becf'
+    ];
+    const groupColorMap = new Map();
+    const getGroup = n => n.group; // 如需改字段，在此修改
+    const colorByGroup = n => {
+      const g = getGroup(n);
+      if (!groupColorMap.has(g)) {
+        groupColorMap.set(g, PALETTE[groupColorMap.size % PALETTE.length]);
+      }
+      return groupColorMap.get(g);
+    };
+
+    // ========= 高亮状态 =========
+    const highlightNodes = new Set();
+    const highlightLinks = new Set();
+    let hoverNode = null;
+
+    const Graph = new ForceGraph3D(document.getElementById('3d-graph'))
+      .backgroundColor('#000')                   // 黑色背景
+      .linkDirectionalArrowLength(3.5)
+      .linkDirectionalArrowRelPos(1)
+      .linkCurvature(0.25)
+      .linkDirectionalParticles(link => highlightLinks.has(link) ? 4 : 0)
+      .linkDirectionalParticleWidth(4)
+      .nodeColor(node => {
+        if (highlightNodes.has(node)) {
+          return node === hoverNode ? '#ff0000' : '#ffa000';
+        }
+        return colorByGroup(node);
+      })
+      .linkWidth(link => highlightLinks.has(link) ? 4 : 1)
+      .nodeThreeObject(node => {
+        const sprite = new SpriteText(String(node.id));
+        sprite.material.depthWrite = false;
+        sprite.color = colorByGroup(node);
+        sprite.textHeight = 8;
+        sprite.center.y = -0.6;
+        return sprite;
+      })
+      .nodeThreeObjectExtend(true);
+
+    // 悬停交互（节点）
+    Graph.onNodeHover(node => {
+      if ((!node && !highlightNodes.size) || node === hoverNode) return;
+
+      highlightNodes.clear();
+      highlightLinks.clear();
+      if (node) {
+        highlightNodes.add(node);
+        node.neighbors?.forEach(nei => highlightNodes.add(nei));
+        node.links?.forEach(l => highlightLinks.add(l));
+      }
+      hoverNode = node || null;
+      updateHighlight();
+    });
+
+    // 悬停交互（边）
+    Graph.onLinkHover(link => {
+      highlightNodes.clear();
+      highlightLinks.clear();
+      if (link) {
+        highlightLinks.add(link);
+        highlightNodes.add(link.source);
+        highlightNodes.add(link.target);
+      }
+      updateHighlight();
+    });
+
+    function updateHighlight() {
+      Graph
+        .nodeColor(Graph.nodeColor())
+        .linkWidth(Graph.linkWidth())
+        .linkDirectionalParticles(Graph.linkDirectionalParticles());
+    }
+
+    // ========= 点击节点：镜头聚焦（click-to-focus） =========
+    Graph.onNodeClick(node => {
+      const distance = 300; // 摄像机与目标点的期望距离，可调
+      const distRatio = 1 + distance / Math.hypot(node.x || 0, node.y || 0, node.z || 0);
+
+      // 若坐标尚未稳定（可能是 0,0,0），设置一个保底位姿
+      const newPos = (node.x || node.y || node.z)
+        ? { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }
+        : { x: 0, y: 0, z: distance };
+
+      // 平滑移动并看向该节点
+      Graph.cameraPosition(
+        newPos,   // 摄像机新位置
+        node,     // lookAt 目标
+        3000      // 动画时长（毫秒）
+      );
+    });
+
+    // ====== 加载数据 -> 构建邻接 -> 渲染 ======
+    fetch('../miserables.json')
+      .then(r => r.json())
+      .then(data => {
+        const nodeById = new Map(data.nodes.map(n => [n.id, n]));
+        data.nodes.forEach(n => { n.neighbors = []; n.links = []; });
+        data.links.forEach(l => {
+          const a = typeof l.source === 'object' ? l.source : nodeById.get(l.source);
+          const b = typeof l.target === 'object' ? l.target : nodeById.get(l.target);
+          if (!a || !b) return;
+          a.neighbors.push(b); b.neighbors.push(a);
+          a.links.push(l);    b.links.push(l);
+        });
+
+        Graph.graphData(data);
+        Graph.d3Force('charge').strength(-100);
+      });
+  </script>
+</body>

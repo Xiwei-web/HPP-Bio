@@ -1,0 +1,2771 @@
+{
+  "nodes": [
+    {
+      "id": "month of birth",
+      "group": 1
+    },
+    {
+      "id": "year of birth",
+      "group": 1
+    },
+    {
+      "id": "sex",
+      "group": 1
+    },
+    {
+      "id": "height",
+      "group": 2
+    },
+    {
+      "id": "weight",
+      "group": 2
+    },
+    {
+      "id": "bmi",
+      "group": 2
+    },
+    {
+      "id": "waist circumference",
+      "group": 2
+    },
+    {
+      "id": "hip circumference",
+      "group": 2
+    },
+    {
+      "id": "neck circumference",
+      "group": 2
+    },
+    {
+      "id": "waist to hip ratio",
+      "group": 2
+    },
+    {
+      "id": "lying blood pressure systolic",
+      "group": 3
+    },
+    {
+      "id": "lying blood pressure diastolic",
+      "group": 3
+    },
+    {
+      "id": "lying blood pressure pulse rate",
+      "group": 3
+    },
+    {
+      "id": "sitting blood pressure systolic",
+      "group": 3
+    },
+    {
+      "id": "sitting blood pressure diastolic",
+      "group": 3
+    },
+    {
+      "id": "sitting blood pressure pulse rate",
+      "group": 3
+    },
+    {
+      "id": "sitting second blood pressure systolic",
+      "group": 3
+    },
+    {
+      "id": "sitting second blood pressure diastolic",
+      "group": 3
+    },
+    {
+      "id": "sitting second blood pressure pulse rate",
+      "group": 3
+    },
+    {
+      "id": "standing one min blood pressure systolic",
+      "group": 3
+    },
+    {
+      "id": "standing one min blood pressure diastolic",
+      "group": 3
+    },
+    {
+      "id": "standing one min blood pressure pulse rate",
+      "group": 3
+    },
+    {
+      "id": "standing three min blood pressure systolic",
+      "group": 3
+    },
+    {
+      "id": "standing three min blood pressure diastolic",
+      "group": 3
+    },
+    {
+      "id": "standing three min blood pressure pulse rate",
+      "group": 3
+    },
+    {
+      "id": "blood pressure hand",
+      "group": 3
+    },
+    {
+      "id": "dizziness",
+      "group": 3
+    },
+    {
+      "id": "bt  albumin float value",
+      "group": 4
+    },
+    {
+      "id": "bt  alkaline phosphatase float value",
+      "group": 4
+    },
+    {
+      "id": "bt  alt float value",
+      "group": 4
+    },
+    {
+      "id": "bt  ast float value",
+      "group": 4
+    },
+    {
+      "id": "bt  basophils % float value",
+      "group": 4
+    },
+    {
+      "id": "bt  basophils abs float value",
+      "group": 4
+    },
+    {
+      "id": "bt  calcium float value",
+      "group": 4
+    },
+    {
+      "id": "bt  creatinine float value",
+      "group": 4
+    },
+    {
+      "id": "bt  direct bilirubin float value",
+      "group": 4
+    },
+    {
+      "id": "bt  eosinophils % float value",
+      "group": 4
+    },
+    {
+      "id": "bt  eosinophils abs float value",
+      "group": 4
+    },
+    {
+      "id": "bt  estradiol float value",
+      "group": 4
+    },
+    {
+      "id": "bt  ferritin float value",
+      "group": 4
+    },
+    {
+      "id": "bt  ggt float value",
+      "group": 4
+    },
+    {
+      "id": "bt  glucose float value",
+      "group": 4
+    },
+    {
+      "id": "bt  hba1c float value",
+      "group": 4
+    },
+    {
+      "id": "bt  hdl cholesterol float value",
+      "group": 4
+    },
+    {
+      "id": "bt  hematocrit float value",
+      "group": 4
+    },
+    {
+      "id": "bt  hemoglobin float value",
+      "group": 4
+    },
+    {
+      "id": "bt  rbc float value",
+      "group": 4
+    },
+    {
+      "id": "bt  rdw float value",
+      "group": 4
+    },
+    {
+      "id": "bt  rheumatoid factor float value",
+      "group": 4
+    },
+    {
+      "id": "bt  sodium float value",
+      "group": 4
+    },
+    {
+      "id": "bt  total bilirubin float value",
+      "group": 4
+    },
+    {
+      "id": "bt  total cholesterol float value",
+      "group": 4
+    },
+    {
+      "id": "bt  total protein float value",
+      "group": 4
+    },
+    {
+      "id": "cgm 1st quartile",
+      "group": 5
+    },
+    {
+      "id": "cgm 3rd quartile",
+      "group": 5
+    },
+    {
+      "id": "cgm above 140",
+      "group": 5
+    },
+    {
+      "id": "cgm above 180",
+      "group": 5
+    },
+    {
+      "id": "cgm above 250",
+      "group": 5
+    },
+    {
+      "id": "cgm below 54",
+      "group": 5
+    },
+    {
+      "id": "cgm below 70",
+      "group": 5
+    },
+    {
+      "id": "cgm in range 63 140",
+      "group": 5
+    },
+    {
+      "id": "cgm in range 70 180",
+      "group": 5
+    },
+    {
+      "id": "cgm adrr",
+      "group": 5
+    },
+    {
+      "id": "cgm auc",
+      "group": 5
+    },
+    {
+      "id": "cgm cogi",
+      "group": 5
+    },
+    {
+      "id": "cgm conga",
+      "group": 5
+    },
+    {
+      "id": "cgm cv",
+      "group": 5
+    },
+    {
+      "id": "cgm cv measures mean",
+      "group": 5
+    },
+    {
+      "id": "cgm gvp",
+      "group": 5
+    },
+    {
+      "id": "cgm hbgi",
+      "group": 5
+    },
+    {
+      "id": "cgm hyper index",
+      "group": 5
+    },
+    {
+      "id": "cgm daily cogi",
+      "group": 5
+    },
+    {
+      "id": "cgm daily gvp",
+      "group": 5
+    },
+    {
+      "id": "cgm daily hbgi",
+      "group": 5
+    },
+    {
+      "id": "ahi",
+      "group": 6
+    },
+    {
+      "id": "imt left",
+      "group": 7
+    },
+    {
+      "id": "imt right",
+      "group": 7
+    },
+    {
+      "id": "imt window width left",
+      "group": 7
+    },
+    {
+      "id": "imt window width right",
+      "group": 7
+    },
+    {
+      "id": "imt fit left",
+      "group": 7
+    },
+    {
+      "id": "imt fit right",
+      "group": 7
+    },
+    {
+      "id": "liver elasticity 2D SWE",
+      "group": 8
+    },
+    {
+      "id": "liver viscosity vi plus",
+      "group": 8
+    },
+    {
+      "id": "liver attenuation index att plus",
+      "group": 8
+    },
+    {
+      "id": "liver speed of sound ssp plus",
+      "group": 8
+    },
+    {
+      "id": "ng total cholesterol",
+      "group": 9
+    },
+    {
+      "id": "ng ldl cholesterol",
+      "group": 9
+    },
+    {
+      "id": "ng hdl cholesterol",
+      "group": 9
+    },
+    {
+      "id": "ng triglycerides",
+      "group": 9
+    },
+    {
+      "id": "ng apolipoprotein a1",
+      "group": 9
+    },
+    {
+      "id": "ng apolipoprotein b",
+      "group": 9
+    },
+    {
+      "id": "ng ldl particle size",
+      "group": 9
+    },
+    {
+      "id": "ng vldl particle conc",
+      "group": 9
+    },
+    {
+      "id": "ng hdl particle conc",
+      "group": 9
+    },
+    {
+      "id": "ng omega 3 pct",
+      "group": 9
+    },
+    {
+      "id": "ng omega 6 pct",
+      "group": 9
+    },
+    {
+      "id": "ng polyunsaturated fatty acids pct",
+      "group": 9
+    },
+    {
+      "id": "ng branched chain amino acids",
+      "group": 9
+    },
+    {
+      "id": "ng glutamine",
+      "group": 9
+    },
+    {
+      "id": "ng citrate",
+      "group": 9
+    },
+    {
+      "id": "ng ketone bodies",
+      "group": 9
+    }
+  ],
+  "links": [
+    {
+      "source": "year of birth",
+      "target": "height",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "weight",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "bmi",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "waist circumference",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "hip circumference",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "neck circumference",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "waist to hip ratio",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "height",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "weight",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "bmi",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "waist circumference",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "hip circumference",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "neck circumference",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "waist to hip ratio",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "lying blood pressure diastolic",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "lying blood pressure pulse rate",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "sitting blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "sitting blood pressure diastolic",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "sitting blood pressure pulse rate",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "sitting second blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "sitting second blood pressure diastolic",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "sitting second blood pressure pulse rate",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "standing one min blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "standing one min blood pressure diastolic",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "standing one min blood pressure pulse rate",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "standing three min blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "standing three min blood pressure diastolic",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "standing three min blood pressure pulse rate",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "blood pressure hand",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "dizziness",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "lying blood pressure diastolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "lying blood pressure pulse rate",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "sitting blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "sitting blood pressure diastolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "sitting blood pressure pulse rate",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "sitting second blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "sitting second blood pressure diastolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "sitting second blood pressure pulse rate",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "standing one min blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "standing one min blood pressure diastolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "standing one min blood pressure pulse rate",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "standing three min blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "standing three min blood pressure diastolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "standing three min blood pressure pulse rate",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "blood pressure hand",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "dizziness",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "imt left",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "imt right",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "imt left",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "imt right",
+      "value": 2
+    },
+    {
+      "source": "year of birth",
+      "target": "ahi",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "ahi",
+      "value": 2
+    },
+    {
+      "source": "bmi",
+      "target": "lying blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "lying blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "sitting blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "sitting blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "sitting second blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "sitting second blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "standing one min blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "standing one min blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "standing three min blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "standing three min blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "lying blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "lying blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "sitting blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "sitting blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "sitting second blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "sitting second blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "standing one min blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "standing one min blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "standing three min blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "standing three min blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "lying blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "lying blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "sitting blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "sitting blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "sitting second blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "sitting second blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "standing one min blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "standing one min blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "standing three min blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "standing three min blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "lying blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "lying blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "sitting blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "sitting blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "sitting second blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "sitting second blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "standing one min blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "standing one min blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "standing three min blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "standing three min blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "lying blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "lying blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "sitting blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "sitting blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "sitting second blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "sitting second blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "standing one min blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "standing one min blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "standing three min blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "standing three min blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "imt left",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "imt right",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "imt left",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "imt right",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "imt left",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "imt right",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "imt left",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "imt right",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "imt left",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "imt right",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "liver elasticity 2D SWE",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "liver viscosity vi plus",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "liver attenuation index att plus",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "liver speed of sound ssp plus",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "liver elasticity 2D SWE",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "liver viscosity vi plus",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "liver attenuation index att plus",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "liver speed of sound ssp plus",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "liver elasticity 2D SWE",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "liver viscosity vi plus",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "liver attenuation index att plus",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "liver speed of sound ssp plus",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "liver elasticity 2D SWE",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "liver viscosity vi plus",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "liver attenuation index att plus",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "liver speed of sound ssp plus",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "liver elasticity 2D SWE",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "liver viscosity vi plus",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "liver attenuation index att plus",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "liver speed of sound ssp plus",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "bt  glucose float value",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "bt  hba1c float value",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "cgm auc",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "cgm cv",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "cgm hbgi",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "cgm above 180",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "bt  glucose float value",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "bt  hba1c float value",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "cgm auc",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "cgm cv",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "cgm hbgi",
+      "value": 4
+    },
+    {
+      "source": "waist circumference",
+      "target": "cgm above 180",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "bt  glucose float value",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "bt  hba1c float value",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "cgm auc",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "cgm cv",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "cgm hbgi",
+      "value": 4
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "cgm above 180",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "bt  glucose float value",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "bt  hba1c float value",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "cgm auc",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "cgm cv",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "cgm hbgi",
+      "value": 4
+    },
+    {
+      "source": "neck circumference",
+      "target": "cgm above 180",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "bt  glucose float value",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "bt  hba1c float value",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "cgm auc",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "cgm cv",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "cgm hbgi",
+      "value": 4
+    },
+    {
+      "source": "hip circumference",
+      "target": "cgm above 180",
+      "value": 4
+    },
+    {
+      "source": "bt  glucose float value",
+      "target": "cgm auc",
+      "value": 5
+    },
+    {
+      "source": "bt  glucose float value",
+      "target": "cgm cogi",
+      "value": 5
+    },
+    {
+      "source": "bt  glucose float value",
+      "target": "cgm conga",
+      "value": 5
+    },
+    {
+      "source": "bt  glucose float value",
+      "target": "cgm cv",
+      "value": 5
+    },
+    {
+      "source": "bt  glucose float value",
+      "target": "cgm above 180",
+      "value": 5
+    },
+    {
+      "source": "bt  glucose float value",
+      "target": "cgm below 70",
+      "value": 5
+    },
+    {
+      "source": "bt  glucose float value",
+      "target": "cgm in range 70 180",
+      "value": 5
+    },
+    {
+      "source": "bt  hba1c float value",
+      "target": "cgm auc",
+      "value": 5
+    },
+    {
+      "source": "bt  hba1c float value",
+      "target": "cgm cogi",
+      "value": 5
+    },
+    {
+      "source": "bt  hba1c float value",
+      "target": "cgm conga",
+      "value": 5
+    },
+    {
+      "source": "bt  hba1c float value",
+      "target": "cgm cv",
+      "value": 5
+    },
+    {
+      "source": "bt  hba1c float value",
+      "target": "cgm above 180",
+      "value": 5
+    },
+    {
+      "source": "bt  hba1c float value",
+      "target": "cgm below 70",
+      "value": 5
+    },
+    {
+      "source": "bt  hba1c float value",
+      "target": "cgm in range 70 180",
+      "value": 5
+    },
+    {
+      "source": "bt  total cholesterol float value",
+      "target": "imt left",
+      "value": 4
+    },
+    {
+      "source": "bt  total cholesterol float value",
+      "target": "imt right",
+      "value": 4
+    },
+    {
+      "source": "bt  hdl cholesterol float value",
+      "target": "imt left",
+      "value": 4
+    },
+    {
+      "source": "bt  hdl cholesterol float value",
+      "target": "imt right",
+      "value": 4
+    },
+    {
+      "source": "ng total cholesterol",
+      "target": "imt left",
+      "value": 4
+    },
+    {
+      "source": "ng total cholesterol",
+      "target": "imt right",
+      "value": 4
+    },
+    {
+      "source": "ng ldl cholesterol",
+      "target": "imt left",
+      "value": 4
+    },
+    {
+      "source": "ng ldl cholesterol",
+      "target": "imt right",
+      "value": 4
+    },
+    {
+      "source": "ng hdl cholesterol",
+      "target": "imt left",
+      "value": 4
+    },
+    {
+      "source": "ng hdl cholesterol",
+      "target": "imt right",
+      "value": 4
+    },
+    {
+      "source": "ng triglycerides",
+      "target": "imt left",
+      "value": 4
+    },
+    {
+      "source": "ng triglycerides",
+      "target": "imt right",
+      "value": 4
+    },
+    {
+      "source": "ng apolipoprotein b",
+      "target": "imt left",
+      "value": 4
+    },
+    {
+      "source": "ng apolipoprotein b",
+      "target": "imt right",
+      "value": 4
+    },
+    {
+      "source": "ng ldl particle size",
+      "target": "imt left",
+      "value": 4
+    },
+    {
+      "source": "ng ldl particle size",
+      "target": "imt right",
+      "value": 4
+    },
+    {
+      "source": "ng vldl particle conc",
+      "target": "imt left",
+      "value": 4
+    },
+    {
+      "source": "ng vldl particle conc",
+      "target": "imt right",
+      "value": 4
+    },
+    {
+      "source": "ng triglycerides",
+      "target": "lying blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "ng triglycerides",
+      "target": "lying blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng triglycerides",
+      "target": "sitting blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "ng triglycerides",
+      "target": "sitting blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng triglycerides",
+      "target": "sitting second blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "ng triglycerides",
+      "target": "sitting second blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng triglycerides",
+      "target": "standing one min blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "ng triglycerides",
+      "target": "standing one min blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng triglycerides",
+      "target": "standing three min blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "ng triglycerides",
+      "target": "standing three min blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng vldl particle conc",
+      "target": "lying blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "ng vldl particle conc",
+      "target": "lying blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng vldl particle conc",
+      "target": "sitting blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "ng vldl particle conc",
+      "target": "sitting blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng vldl particle conc",
+      "target": "sitting second blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "ng vldl particle conc",
+      "target": "sitting second blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng vldl particle conc",
+      "target": "standing one min blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "ng vldl particle conc",
+      "target": "standing one min blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng vldl particle conc",
+      "target": "standing three min blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "ng vldl particle conc",
+      "target": "standing three min blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  alt float value",
+      "target": "liver elasticity 2D SWE",
+      "value": 5
+    },
+    {
+      "source": "bt  alt float value",
+      "target": "liver viscosity vi plus",
+      "value": 5
+    },
+    {
+      "source": "bt  alt float value",
+      "target": "liver attenuation index att plus",
+      "value": 5
+    },
+    {
+      "source": "bt  alt float value",
+      "target": "liver speed of sound ssp plus",
+      "value": 5
+    },
+    {
+      "source": "bt  ast float value",
+      "target": "liver elasticity 2D SWE",
+      "value": 5
+    },
+    {
+      "source": "bt  ast float value",
+      "target": "liver viscosity vi plus",
+      "value": 5
+    },
+    {
+      "source": "bt  ast float value",
+      "target": "liver attenuation index att plus",
+      "value": 5
+    },
+    {
+      "source": "bt  ast float value",
+      "target": "liver speed of sound ssp plus",
+      "value": 5
+    },
+    {
+      "source": "bt  ggt float value",
+      "target": "liver elasticity 2D SWE",
+      "value": 5
+    },
+    {
+      "source": "bt  ggt float value",
+      "target": "liver viscosity vi plus",
+      "value": 5
+    },
+    {
+      "source": "bt  ggt float value",
+      "target": "liver attenuation index att plus",
+      "value": 5
+    },
+    {
+      "source": "bt  ggt float value",
+      "target": "liver speed of sound ssp plus",
+      "value": 5
+    },
+    {
+      "source": "bt  alkaline phosphatase float value",
+      "target": "liver elasticity 2D SWE",
+      "value": 5
+    },
+    {
+      "source": "bt  alkaline phosphatase float value",
+      "target": "liver viscosity vi plus",
+      "value": 5
+    },
+    {
+      "source": "bt  alkaline phosphatase float value",
+      "target": "liver attenuation index att plus",
+      "value": 5
+    },
+    {
+      "source": "bt  alkaline phosphatase float value",
+      "target": "liver speed of sound ssp plus",
+      "value": 5
+    },
+    {
+      "source": "bt  total bilirubin float value",
+      "target": "liver elasticity 2D SWE",
+      "value": 5
+    },
+    {
+      "source": "bt  total bilirubin float value",
+      "target": "liver viscosity vi plus",
+      "value": 5
+    },
+    {
+      "source": "bt  total bilirubin float value",
+      "target": "liver attenuation index att plus",
+      "value": 5
+    },
+    {
+      "source": "bt  total bilirubin float value",
+      "target": "liver speed of sound ssp plus",
+      "value": 5
+    },
+    {
+      "source": "bt  albumin float value",
+      "target": "liver elasticity 2D SWE",
+      "value": 5
+    },
+    {
+      "source": "bt  albumin float value",
+      "target": "liver viscosity vi plus",
+      "value": 5
+    },
+    {
+      "source": "bt  albumin float value",
+      "target": "liver attenuation index att plus",
+      "value": 5
+    },
+    {
+      "source": "bt  albumin float value",
+      "target": "liver speed of sound ssp plus",
+      "value": 5
+    },
+    {
+      "source": "ahi",
+      "target": "lying blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "lying blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "sitting blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "sitting blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "sitting second blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "sitting second blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "standing one min blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "standing one min blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "standing three min blood pressure systolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "standing three min blood pressure diastolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "bt  glucose float value",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "bt  hba1c float value",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "cgm cv",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "cgm above 180",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "cgm below 70",
+      "value": 4
+    },
+    {
+      "source": "bt  sodium float value",
+      "target": "lying blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  sodium float value",
+      "target": "lying blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  sodium float value",
+      "target": "sitting blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  sodium float value",
+      "target": "sitting blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  sodium float value",
+      "target": "sitting second blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  sodium float value",
+      "target": "sitting second blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  sodium float value",
+      "target": "standing one min blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  sodium float value",
+      "target": "standing one min blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  sodium float value",
+      "target": "standing three min blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  sodium float value",
+      "target": "standing three min blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  creatinine float value",
+      "target": "lying blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  creatinine float value",
+      "target": "lying blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  creatinine float value",
+      "target": "sitting blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  creatinine float value",
+      "target": "sitting blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  creatinine float value",
+      "target": "sitting second blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  creatinine float value",
+      "target": "sitting second blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  creatinine float value",
+      "target": "standing one min blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  creatinine float value",
+      "target": "standing one min blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  creatinine float value",
+      "target": "standing three min blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  creatinine float value",
+      "target": "standing three min blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  calcium float value",
+      "target": "lying blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  calcium float value",
+      "target": "lying blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  calcium float value",
+      "target": "sitting blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  calcium float value",
+      "target": "sitting blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  calcium float value",
+      "target": "sitting second blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  calcium float value",
+      "target": "sitting second blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  calcium float value",
+      "target": "standing one min blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  calcium float value",
+      "target": "standing one min blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  calcium float value",
+      "target": "standing three min blood pressure systolic",
+      "value": 3
+    },
+    {
+      "source": "bt  calcium float value",
+      "target": "standing three min blood pressure diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt  hemoglobin float value",
+      "target": "ahi",
+      "value": 2
+    },
+    {
+      "source": "bt  hematocrit float value",
+      "target": "ahi",
+      "value": 2
+    },
+    {
+      "source": "bt  rbc float value",
+      "target": "ahi",
+      "value": 2
+    },
+    {
+      "source": "bt  rheumatoid factor float value",
+      "target": "imt left",
+      "value": 2
+    },
+    {
+      "source": "bt  rheumatoid factor float value",
+      "target": "imt right",
+      "value": 2
+    },
+    {
+      "source": "bt  rheumatoid factor float value",
+      "target": "liver elasticity 2D SWE",
+      "value": 2
+    },
+    {
+      "source": "bt  rheumatoid factor float value",
+      "target": "liver viscosity vi plus",
+      "value": 2
+    },
+    {
+      "source": "bt  rheumatoid factor float value",
+      "target": "liver attenuation index att plus",
+      "value": 2
+    },
+    {
+      "source": "bt  rheumatoid factor float value",
+      "target": "liver speed of sound ssp plus",
+      "value": 2
+    },
+    {
+      "source": "bt  rdw float value",
+      "target": "imt left",
+      "value": 2
+    },
+    {
+      "source": "bt  rdw float value",
+      "target": "imt right",
+      "value": 2
+    },
+    {
+      "source": "bt  rdw float value",
+      "target": "liver elasticity 2D SWE",
+      "value": 2
+    },
+    {
+      "source": "bt  rdw float value",
+      "target": "liver viscosity vi plus",
+      "value": 2
+    },
+    {
+      "source": "bt  rdw float value",
+      "target": "liver attenuation index att plus",
+      "value": 2
+    },
+    {
+      "source": "bt  rdw float value",
+      "target": "liver speed of sound ssp plus",
+      "value": 2
+    },
+    {
+      "source": "bt  ferritin float value",
+      "target": "imt left",
+      "value": 2
+    },
+    {
+      "source": "bt  ferritin float value",
+      "target": "imt right",
+      "value": 2
+    },
+    {
+      "source": "bt  ferritin float value",
+      "target": "liver elasticity 2D SWE",
+      "value": 2
+    },
+    {
+      "source": "bt  ferritin float value",
+      "target": "liver viscosity vi plus",
+      "value": 2
+    },
+    {
+      "source": "bt  ferritin float value",
+      "target": "liver attenuation index att plus",
+      "value": 2
+    },
+    {
+      "source": "bt  ferritin float value",
+      "target": "liver speed of sound ssp plus",
+      "value": 2
+    },
+    {
+      "source": "bt  total protein float value",
+      "target": "imt left",
+      "value": 2
+    },
+    {
+      "source": "bt  total protein float value",
+      "target": "imt right",
+      "value": 2
+    },
+    {
+      "source": "bt  total protein float value",
+      "target": "liver elasticity 2D SWE",
+      "value": 2
+    },
+    {
+      "source": "bt  total protein float value",
+      "target": "liver viscosity vi plus",
+      "value": 2
+    },
+    {
+      "source": "bt  total protein float value",
+      "target": "liver attenuation index att plus",
+      "value": 2
+    },
+    {
+      "source": "bt  total protein float value",
+      "target": "liver speed of sound ssp plus",
+      "value": 2
+    },
+    {
+      "source": "bt  albumin float value",
+      "target": "imt left",
+      "value": 2
+    },
+    {
+      "source": "bt  albumin float value",
+      "target": "imt right",
+      "value": 2
+    },
+    {
+      "source": "bt  albumin float value",
+      "target": "liver elasticity 2D SWE",
+      "value": 2
+    },
+    {
+      "source": "bt  albumin float value",
+      "target": "liver viscosity vi plus",
+      "value": 2
+    },
+    {
+      "source": "bt  albumin float value",
+      "target": "liver attenuation index att plus",
+      "value": 2
+    },
+    {
+      "source": "bt  albumin float value",
+      "target": "liver speed of sound ssp plus",
+      "value": 2
+    },
+    {
+      "source": "ng omega 3 pct",
+      "target": "liver elasticity 2D SWE",
+      "value": 2
+    },
+    {
+      "source": "ng omega 3 pct",
+      "target": "liver viscosity vi plus",
+      "value": 2
+    },
+    {
+      "source": "ng omega 3 pct",
+      "target": "liver attenuation index att plus",
+      "value": 2
+    },
+    {
+      "source": "ng omega 3 pct",
+      "target": "liver speed of sound ssp plus",
+      "value": 2
+    },
+    {
+      "source": "ng omega 3 pct",
+      "target": "bt  hba1c float value",
+      "value": 2
+    },
+    {
+      "source": "ng omega 3 pct",
+      "target": "cgm cv",
+      "value": 2
+    },
+    {
+      "source": "ng omega 6 pct",
+      "target": "liver elasticity 2D SWE",
+      "value": 2
+    },
+    {
+      "source": "ng omega 6 pct",
+      "target": "liver viscosity vi plus",
+      "value": 2
+    },
+    {
+      "source": "ng omega 6 pct",
+      "target": "liver attenuation index att plus",
+      "value": 2
+    },
+    {
+      "source": "ng omega 6 pct",
+      "target": "liver speed of sound ssp plus",
+      "value": 2
+    },
+    {
+      "source": "ng omega 6 pct",
+      "target": "bt  hba1c float value",
+      "value": 2
+    },
+    {
+      "source": "ng omega 6 pct",
+      "target": "cgm cv",
+      "value": 2
+    },
+    {
+      "source": "ng polyunsaturated fatty acids pct",
+      "target": "liver elasticity 2D SWE",
+      "value": 2
+    },
+    {
+      "source": "ng polyunsaturated fatty acids pct",
+      "target": "liver viscosity vi plus",
+      "value": 2
+    },
+    {
+      "source": "ng polyunsaturated fatty acids pct",
+      "target": "liver attenuation index att plus",
+      "value": 2
+    },
+    {
+      "source": "ng polyunsaturated fatty acids pct",
+      "target": "liver speed of sound ssp plus",
+      "value": 2
+    },
+    {
+      "source": "ng polyunsaturated fatty acids pct",
+      "target": "bt  hba1c float value",
+      "value": 2
+    },
+    {
+      "source": "ng polyunsaturated fatty acids pct",
+      "target": "cgm cv",
+      "value": 2
+    },
+    {
+      "source": "ng branched chain amino acids",
+      "target": "bt  glucose float value",
+      "value": 2
+    },
+    {
+      "source": "ng branched chain amino acids",
+      "target": "bt  hba1c float value",
+      "value": 2
+    },
+    {
+      "source": "ng branched chain amino acids",
+      "target": "cgm cv",
+      "value": 2
+    },
+    {
+      "source": "ng branched chain amino acids",
+      "target": "cgm above 180",
+      "value": 2
+    },
+    {
+      "source": "ng glutamine",
+      "target": "bt  glucose float value",
+      "value": 2
+    },
+    {
+      "source": "ng glutamine",
+      "target": "bt  hba1c float value",
+      "value": 2
+    },
+    {
+      "source": "ng glutamine",
+      "target": "cgm cv",
+      "value": 2
+    },
+    {
+      "source": "ng glutamine",
+      "target": "cgm above 180",
+      "value": 2
+    },
+    {
+      "source": "ng ketone bodies",
+      "target": "bt  glucose float value",
+      "value": 2
+    },
+    {
+      "source": "ng ketone bodies",
+      "target": "bt  hba1c float value",
+      "value": 2
+    },
+    {
+      "source": "ng ketone bodies",
+      "target": "cgm cv",
+      "value": 2
+    },
+    {
+      "source": "ng ketone bodies",
+      "target": "cgm above 180",
+      "value": 2
+    },
+    {
+      "source": "ng citrate",
+      "target": "bt  glucose float value",
+      "value": 2
+    },
+    {
+      "source": "ng citrate",
+      "target": "bt  hba1c float value",
+      "value": 2
+    },
+    {
+      "source": "ng citrate",
+      "target": "cgm cv",
+      "value": 2
+    },
+    {
+      "source": "ng citrate",
+      "target": "cgm above 180",
+      "value": 2
+    },
+    {
+      "source": "lying blood pressure systolic",
+      "target": "imt left",
+      "value": 5
+    },
+    {
+      "source": "lying blood pressure systolic",
+      "target": "imt right",
+      "value": 5
+    },
+    {
+      "source": "lying blood pressure diastolic",
+      "target": "imt left",
+      "value": 5
+    },
+    {
+      "source": "lying blood pressure diastolic",
+      "target": "imt right",
+      "value": 5
+    },
+    {
+      "source": "sitting blood pressure systolic",
+      "target": "imt left",
+      "value": 5
+    },
+    {
+      "source": "sitting blood pressure systolic",
+      "target": "imt right",
+      "value": 5
+    },
+    {
+      "source": "sitting blood pressure diastolic",
+      "target": "imt left",
+      "value": 5
+    },
+    {
+      "source": "sitting blood pressure diastolic",
+      "target": "imt right",
+      "value": 5
+    },
+    {
+      "source": "sitting second blood pressure systolic",
+      "target": "imt left",
+      "value": 5
+    },
+    {
+      "source": "sitting second blood pressure systolic",
+      "target": "imt right",
+      "value": 5
+    },
+    {
+      "source": "sitting second blood pressure diastolic",
+      "target": "imt left",
+      "value": 5
+    },
+    {
+      "source": "sitting second blood pressure diastolic",
+      "target": "imt right",
+      "value": 5
+    },
+    {
+      "source": "standing one min blood pressure systolic",
+      "target": "imt left",
+      "value": 5
+    },
+    {
+      "source": "standing one min blood pressure systolic",
+      "target": "imt right",
+      "value": 5
+    },
+    {
+      "source": "standing one min blood pressure diastolic",
+      "target": "imt left",
+      "value": 5
+    },
+    {
+      "source": "standing one min blood pressure diastolic",
+      "target": "imt right",
+      "value": 5
+    },
+    {
+      "source": "standing three min blood pressure systolic",
+      "target": "imt left",
+      "value": 5
+    },
+    {
+      "source": "standing three min blood pressure systolic",
+      "target": "imt right",
+      "value": 5
+    },
+    {
+      "source": "standing three min blood pressure diastolic",
+      "target": "imt left",
+      "value": 5
+    },
+    {
+      "source": "standing three min blood pressure diastolic",
+      "target": "imt right",
+      "value": 5
+    },
+    {
+      "source": "year of birth",
+      "target": "month of birth",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "month of birth",
+      "value": 2
+    },
+
+    {
+      "source": "weight",
+      "target": "height",
+      "value": 2
+    },
+    {
+      "source": "bmi",
+      "target": "height",
+      "value": 2
+    },
+    {
+      "source": "waist circumference",
+      "target": "height",
+      "value": 2
+    },
+    {
+      "source": "hip circumference",
+      "target": "height",
+      "value": 2
+    },
+    {
+      "source": "neck circumference",
+      "target": "height",
+      "value": 2
+    },
+    {
+      "source": "waist to hip ratio",
+      "target": "height",
+      "value": 2
+    },
+    {
+      "source": "lying blood pressure diastolic",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "lying blood pressure pulse rate",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "sitting blood pressure systolic",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "sitting blood pressure diastolic",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "sitting blood pressure pulse rate",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "sitting second blood pressure systolic",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "sitting second blood pressure diastolic",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "sitting second blood pressure pulse rate",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "standing one min blood pressure systolic",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "standing one min blood pressure diastolic",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "standing one min blood pressure pulse rate",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "standing three min blood pressure systolic",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "standing three min blood pressure diastolic",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "standing three min blood pressure pulse rate",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "blood pressure hand",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "dizziness",
+      "target": "lying blood pressure systolic",
+      "value": 2
+    },
+    {
+      "source": "bt  alkaline phosphatase float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  alt float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  ast float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  basophils % float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  basophils abs float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  calcium float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  creatinine float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  direct bilirubin float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  eosinophils % float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  eosinophils abs float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  estradiol float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  ferritin float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  ggt float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  glucose float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  hba1c float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  hdl cholesterol float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  hematocrit float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  hemoglobin float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  rbc float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  rdw float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  rheumatoid factor float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  sodium float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  total bilirubin float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  total cholesterol float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "bt  total protein float value",
+      "target": "bt  albumin float value",
+      "value": 2
+    },
+    {
+      "source": "cgm 3rd quartile",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm above 140",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm above 180",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm above 250",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm below 54",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm below 70",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm in range 63 140",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm in range 70 180",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm adrr",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm auc",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm cogi",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm conga",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm cv",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm cv measures mean",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm gvp",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm hbgi",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm hyper index",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm daily cogi",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm daily gvp",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "cgm daily hbgi",
+      "target": "cgm 1st quartile",
+      "value": 2
+    },
+    {
+      "source": "imt right",
+      "target": "imt left",
+      "value": 2
+    },
+    {
+      "source": "imt window width left",
+      "target": "imt left",
+      "value": 2
+    },
+    {
+      "source": "imt window width right",
+      "target": "imt left",
+      "value": 2
+    },
+    {
+      "source": "imt fit left",
+      "target": "imt left",
+      "value": 2
+    },
+    {
+      "source": "imt fit right",
+      "target": "imt left",
+      "value": 2
+    },
+    {
+      "source": "liver viscosity vi plus",
+      "target": "liver elasticity 2D SWE",
+      "value": 2
+    },
+    {
+      "source": "liver attenuation index att plus",
+      "target": "liver elasticity 2D SWE",
+      "value": 2
+    },
+    {
+      "source": "liver speed of sound ssp plus",
+      "target": "liver elasticity 2D SWE",
+      "value": 2
+    },
+    {
+      "source": "ng ldl cholesterol",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "ng hdl cholesterol",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "ng triglycerides",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "ng apolipoprotein a1",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "ng apolipoprotein b",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "ng ldl particle size",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "ng vldl particle conc",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "ng hdl particle conc",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "ng omega 3 pct",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "ng omega 6 pct",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "ng polyunsaturated fatty acids pct",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "ng branched chain amino acids",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "ng glutamine",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "ng citrate",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "ng ketone bodies",
+      "target": "ng total cholesterol",
+      "value": 2
+    },
+    {
+      "source": "month of birth",
+      "target": "height",
+      "value": 1
+    },
+    {
+      "source": "height",
+      "target": "lying blood pressure systolic",
+      "value": 1
+    },
+    {
+      "source": "lying blood pressure systolic",
+      "target": "bt  albumin float value",
+      "value": 1
+    },
+    {
+      "source": "bt  albumin float value",
+      "target": "cgm 1st quartile",
+      "value": 1
+    },
+    {
+      "source": "cgm 1st quartile",
+      "target": "ahi",
+      "value": 1
+    },
+    {
+      "source": "ahi",
+      "target": "imt left",
+      "value": 1
+    },
+    {
+      "source": "imt left",
+      "target": "liver elasticity 2D SWE",
+      "value": 1
+    },
+    {
+      "source": "liver elasticity 2D SWE",
+      "target": "ng total cholesterol",
+      "value": 1
+    }
+  ]
+}

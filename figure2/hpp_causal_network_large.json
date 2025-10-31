@@ -1,0 +1,2274 @@
+{
+  "nodes": [
+    {
+      "id": "month_of_birth",
+      "group": 1
+    },
+    {
+      "id": "year_of_birth",
+      "group": 1
+    },
+    {
+      "id": "sex",
+      "group": 1
+    },
+    {
+      "id": "study_id",
+      "group": 1
+    },
+    {
+      "id": "height",
+      "group": 2
+    },
+    {
+      "id": "weight",
+      "group": 2
+    },
+    {
+      "id": "bmi",
+      "group": 2
+    },
+    {
+      "id": "waist_circumference",
+      "group": 2
+    },
+    {
+      "id": "hip_circumference",
+      "group": 2
+    },
+    {
+      "id": "neck_circumference",
+      "group": 2
+    },
+    {
+      "id": "waist_to_hip_ratio",
+      "group": 2
+    },
+    {
+      "id": "lying_blood_pressure_systolic",
+      "group": 3
+    },
+    {
+      "id": "lying_blood_pressure_diastolic",
+      "group": 3
+    },
+    {
+      "id": "lying_blood_pressure_pulse_rate",
+      "group": 3
+    },
+    {
+      "id": "sitting_blood_pressure_systolic",
+      "group": 3
+    },
+    {
+      "id": "sitting_blood_pressure_diastolic",
+      "group": 3
+    },
+    {
+      "id": "sitting_blood_pressure_pulse_rate",
+      "group": 3
+    },
+    {
+      "id": "sitting_second_blood_pressure_systolic",
+      "group": 3
+    },
+    {
+      "id": "sitting_second_blood_pressure_diastolic",
+      "group": 3
+    },
+    {
+      "id": "sitting_second_blood_pressure_pulse_rate",
+      "group": 3
+    },
+    {
+      "id": "standing_one_min_blood_pressure_systolic",
+      "group": 3
+    },
+    {
+      "id": "standing_one_min_blood_pressure_diastolic",
+      "group": 3
+    },
+    {
+      "id": "standing_one_min_blood_pressure_pulse_rate",
+      "group": 3
+    },
+    {
+      "id": "standing_three_min_blood_pressure_systolic",
+      "group": 3
+    },
+    {
+      "id": "standing_three_min_blood_pressure_diastolic",
+      "group": 3
+    },
+    {
+      "id": "standing_three_min_blood_pressure_pulse_rate",
+      "group": 3
+    },
+    {
+      "id": "blood_pressure_hand",
+      "group": 3
+    },
+    {
+      "id": "dizziness",
+      "group": 3
+    },
+    {
+      "id": "bt__albumin_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__alkaline_phosphatase_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__alt_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__ast_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__basophils_%_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__basophils_abs_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__calcium_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__creatinine_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__direct_bilirubin_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__eosinophils_%_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__eosinophils_abs_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__estradiol_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__ferritin_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__ggt_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__glucose_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__hba1c_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__hdl_cholesterol_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__hematocrit_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__hemoglobin_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__rbc_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__rdw_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__rheumatoid_factor_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__sodium_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__total_bilirubin_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__total_cholesterol_float_value",
+      "group": 4
+    },
+    {
+      "id": "bt__total_protein_float_value",
+      "group": 4
+    },
+    {
+      "id": "cgm_1st_quartile",
+      "group": 5
+    },
+    {
+      "id": "cgm_3rd_quartile",
+      "group": 5
+    },
+    {
+      "id": "cgm_above_140",
+      "group": 5
+    },
+    {
+      "id": "cgm_above_180",
+      "group": 5
+    },
+    {
+      "id": "cgm_above_250",
+      "group": 5
+    },
+    {
+      "id": "cgm_below_54",
+      "group": 5
+    },
+    {
+      "id": "cgm_below_70",
+      "group": 5
+    },
+    {
+      "id": "cgm_in_range_63_140",
+      "group": 5
+    },
+    {
+      "id": "cgm_in_range_70_180",
+      "group": 5
+    },
+    {
+      "id": "cgm_adrr",
+      "group": 5
+    },
+    {
+      "id": "cgm_auc",
+      "group": 5
+    },
+    {
+      "id": "cgm_cogi",
+      "group": 5
+    },
+    {
+      "id": "cgm_conga",
+      "group": 5
+    },
+    {
+      "id": "cgm_cv",
+      "group": 5
+    },
+    {
+      "id": "cgm_cv_measures_mean",
+      "group": 5
+    },
+    {
+      "id": "cgm_gvp",
+      "group": 5
+    },
+    {
+      "id": "cgm_hbgi",
+      "group": 5
+    },
+    {
+      "id": "cgm_hyper_index",
+      "group": 5
+    },
+    {
+      "id": "cgm_daily_cogi",
+      "group": 5
+    },
+    {
+      "id": "cgm_daily_gvp",
+      "group": 5
+    },
+    {
+      "id": "cgm_daily_hbgi",
+      "group": 5
+    },
+    {
+      "id": "ahi",
+      "group": 6
+    },
+    {
+      "id": "imt_left",
+      "group": 7
+    },
+    {
+      "id": "imt_right",
+      "group": 7
+    },
+    {
+      "id": "imt_window_width_left",
+      "group": 7
+    },
+    {
+      "id": "imt_window_width_right",
+      "group": 7
+    },
+    {
+      "id": "imt_fit_left",
+      "group": 7
+    },
+    {
+      "id": "imt_fit_right",
+      "group": 7
+    },
+    {
+      "id": "liver_elasticity_2D_SWE",
+      "group": 8
+    },
+    {
+      "id": "liver_viscosity_vi_plus",
+      "group": 8
+    },
+    {
+      "id": "liver_attenuation_index_att_plus",
+      "group": 8
+    },
+    {
+      "id": "liver_speed_of_sound_ssp_plus",
+      "group": 8
+    },
+    {
+      "id": "ng_total_cholesterol",
+      "group": 9
+    },
+    {
+      "id": "ng_ldl_cholesterol",
+      "group": 9
+    },
+    {
+      "id": "ng_hdl_cholesterol",
+      "group": 9
+    },
+    {
+      "id": "ng_triglycerides",
+      "group": 9
+    },
+    {
+      "id": "ng_apolipoprotein_a1",
+      "group": 9
+    },
+    {
+      "id": "ng_apolipoprotein_b",
+      "group": 9
+    },
+    {
+      "id": "ng_ldl_particle_size",
+      "group": 9
+    },
+    {
+      "id": "ng_vldl_particle_conc",
+      "group": 9
+    },
+    {
+      "id": "ng_hdl_particle_conc",
+      "group": 9
+    },
+    {
+      "id": "ng_omega_3_pct",
+      "group": 9
+    },
+    {
+      "id": "ng_omega_6_pct",
+      "group": 9
+    },
+    {
+      "id": "ng_polyunsaturated_fatty_acids_pct",
+      "group": 9
+    },
+    {
+      "id": "ng_branched_chain_amino_acids",
+      "group": 9
+    },
+    {
+      "id": "ng_glutamine",
+      "group": 9
+    },
+    {
+      "id": "ng_citrate",
+      "group": 9
+    },
+    {
+      "id": "ng_ketone_bodies",
+      "group": 9
+    }
+  ],
+  "links": [
+    {
+      "source": "year_of_birth",
+      "target": "height",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "weight",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "bmi",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "waist_circumference",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "hip_circumference",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "neck_circumference",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "waist_to_hip_ratio",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "height",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "weight",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "bmi",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "waist_circumference",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "hip_circumference",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "neck_circumference",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "waist_to_hip_ratio",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "lying_blood_pressure_systolic",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "lying_blood_pressure_diastolic",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "lying_blood_pressure_pulse_rate",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "sitting_blood_pressure_systolic",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "sitting_blood_pressure_diastolic",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "sitting_blood_pressure_pulse_rate",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "sitting_second_blood_pressure_systolic",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "sitting_second_blood_pressure_diastolic",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "sitting_second_blood_pressure_pulse_rate",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "standing_one_min_blood_pressure_systolic",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "standing_one_min_blood_pressure_diastolic",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "standing_one_min_blood_pressure_pulse_rate",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "standing_three_min_blood_pressure_systolic",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "standing_three_min_blood_pressure_diastolic",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "standing_three_min_blood_pressure_pulse_rate",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "blood_pressure_hand",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "dizziness",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "lying_blood_pressure_systolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "lying_blood_pressure_diastolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "lying_blood_pressure_pulse_rate",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "sitting_blood_pressure_systolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "sitting_blood_pressure_diastolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "sitting_blood_pressure_pulse_rate",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "sitting_second_blood_pressure_systolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "sitting_second_blood_pressure_diastolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "sitting_second_blood_pressure_pulse_rate",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "standing_one_min_blood_pressure_systolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "standing_one_min_blood_pressure_diastolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "standing_one_min_blood_pressure_pulse_rate",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "standing_three_min_blood_pressure_systolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "standing_three_min_blood_pressure_diastolic",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "standing_three_min_blood_pressure_pulse_rate",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "blood_pressure_hand",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "dizziness",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "imt_left",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "imt_right",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "imt_left",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "imt_right",
+      "value": 2
+    },
+    {
+      "source": "year_of_birth",
+      "target": "ahi",
+      "value": 2
+    },
+    {
+      "source": "sex",
+      "target": "ahi",
+      "value": 2
+    },
+    {
+      "source": "bmi",
+      "target": "lying_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "lying_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "sitting_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "sitting_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "sitting_second_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "sitting_second_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "standing_one_min_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "standing_one_min_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "standing_three_min_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "standing_three_min_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "lying_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "lying_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "sitting_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "sitting_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "sitting_second_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "sitting_second_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "standing_one_min_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "standing_one_min_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "standing_three_min_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "standing_three_min_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "lying_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "lying_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "sitting_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "sitting_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "sitting_second_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "sitting_second_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "standing_one_min_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "standing_one_min_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "standing_three_min_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "standing_three_min_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "lying_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "lying_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "sitting_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "sitting_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "sitting_second_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "sitting_second_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "standing_one_min_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "standing_one_min_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "standing_three_min_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "standing_three_min_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "lying_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "lying_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "sitting_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "sitting_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "sitting_second_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "sitting_second_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "standing_one_min_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "standing_one_min_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "standing_three_min_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "standing_three_min_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "imt_left",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "imt_right",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "imt_left",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "imt_right",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "imt_left",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "imt_right",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "imt_left",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "imt_right",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "imt_left",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "imt_right",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "liver_viscosity_vi_plus",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "liver_viscosity_vi_plus",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "liver_viscosity_vi_plus",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "liver_viscosity_vi_plus",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "liver_viscosity_vi_plus",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "bt__glucose_float_value",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "bt__hba1c_float_value",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "cgm_auc",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "cgm_cv",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "cgm_hbgi",
+      "value": 4
+    },
+    {
+      "source": "bmi",
+      "target": "cgm_above_180",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "bt__glucose_float_value",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "bt__hba1c_float_value",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "cgm_auc",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "cgm_cv",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "cgm_hbgi",
+      "value": 4
+    },
+    {
+      "source": "waist_circumference",
+      "target": "cgm_above_180",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "bt__glucose_float_value",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "bt__hba1c_float_value",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "cgm_auc",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "cgm_cv",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "cgm_hbgi",
+      "value": 4
+    },
+    {
+      "source": "waist_to_hip_ratio",
+      "target": "cgm_above_180",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "bt__glucose_float_value",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "bt__hba1c_float_value",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "cgm_auc",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "cgm_cv",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "cgm_hbgi",
+      "value": 4
+    },
+    {
+      "source": "neck_circumference",
+      "target": "cgm_above_180",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "bt__glucose_float_value",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "bt__hba1c_float_value",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "cgm_auc",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "cgm_cv",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "cgm_hbgi",
+      "value": 4
+    },
+    {
+      "source": "hip_circumference",
+      "target": "cgm_above_180",
+      "value": 4
+    },
+    {
+      "source": "bt__glucose_float_value",
+      "target": "cgm_auc",
+      "value": 5
+    },
+    {
+      "source": "bt__glucose_float_value",
+      "target": "cgm_cogi",
+      "value": 5
+    },
+    {
+      "source": "bt__glucose_float_value",
+      "target": "cgm_conga",
+      "value": 5
+    },
+    {
+      "source": "bt__glucose_float_value",
+      "target": "cgm_cv",
+      "value": 5
+    },
+    {
+      "source": "bt__glucose_float_value",
+      "target": "cgm_above_180",
+      "value": 5
+    },
+    {
+      "source": "bt__glucose_float_value",
+      "target": "cgm_below_70",
+      "value": 5
+    },
+    {
+      "source": "bt__glucose_float_value",
+      "target": "cgm_in_range_70_180",
+      "value": 5
+    },
+    {
+      "source": "bt__hba1c_float_value",
+      "target": "cgm_auc",
+      "value": 5
+    },
+    {
+      "source": "bt__hba1c_float_value",
+      "target": "cgm_cogi",
+      "value": 5
+    },
+    {
+      "source": "bt__hba1c_float_value",
+      "target": "cgm_conga",
+      "value": 5
+    },
+    {
+      "source": "bt__hba1c_float_value",
+      "target": "cgm_cv",
+      "value": 5
+    },
+    {
+      "source": "bt__hba1c_float_value",
+      "target": "cgm_above_180",
+      "value": 5
+    },
+    {
+      "source": "bt__hba1c_float_value",
+      "target": "cgm_below_70",
+      "value": 5
+    },
+    {
+      "source": "bt__hba1c_float_value",
+      "target": "cgm_in_range_70_180",
+      "value": 5
+    },
+    {
+      "source": "bt__total_cholesterol_float_value",
+      "target": "imt_left",
+      "value": 4
+    },
+    {
+      "source": "bt__total_cholesterol_float_value",
+      "target": "imt_right",
+      "value": 4
+    },
+    {
+      "source": "bt__hdl_cholesterol_float_value",
+      "target": "imt_left",
+      "value": 4
+    },
+    {
+      "source": "bt__hdl_cholesterol_float_value",
+      "target": "imt_right",
+      "value": 4
+    },
+    {
+      "source": "ng_total_cholesterol",
+      "target": "imt_left",
+      "value": 4
+    },
+    {
+      "source": "ng_total_cholesterol",
+      "target": "imt_right",
+      "value": 4
+    },
+    {
+      "source": "ng_ldl_cholesterol",
+      "target": "imt_left",
+      "value": 4
+    },
+    {
+      "source": "ng_ldl_cholesterol",
+      "target": "imt_right",
+      "value": 4
+    },
+    {
+      "source": "ng_hdl_cholesterol",
+      "target": "imt_left",
+      "value": 4
+    },
+    {
+      "source": "ng_hdl_cholesterol",
+      "target": "imt_right",
+      "value": 4
+    },
+    {
+      "source": "ng_triglycerides",
+      "target": "imt_left",
+      "value": 4
+    },
+    {
+      "source": "ng_triglycerides",
+      "target": "imt_right",
+      "value": 4
+    },
+    {
+      "source": "ng_apolipoprotein_b",
+      "target": "imt_left",
+      "value": 4
+    },
+    {
+      "source": "ng_apolipoprotein_b",
+      "target": "imt_right",
+      "value": 4
+    },
+    {
+      "source": "ng_ldl_particle_size",
+      "target": "imt_left",
+      "value": 4
+    },
+    {
+      "source": "ng_ldl_particle_size",
+      "target": "imt_right",
+      "value": 4
+    },
+    {
+      "source": "ng_vldl_particle_conc",
+      "target": "imt_left",
+      "value": 4
+    },
+    {
+      "source": "ng_vldl_particle_conc",
+      "target": "imt_right",
+      "value": 4
+    },
+    {
+      "source": "ng_triglycerides",
+      "target": "lying_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "ng_triglycerides",
+      "target": "lying_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng_triglycerides",
+      "target": "sitting_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "ng_triglycerides",
+      "target": "sitting_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng_triglycerides",
+      "target": "sitting_second_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "ng_triglycerides",
+      "target": "sitting_second_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng_triglycerides",
+      "target": "standing_one_min_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "ng_triglycerides",
+      "target": "standing_one_min_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng_triglycerides",
+      "target": "standing_three_min_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "ng_triglycerides",
+      "target": "standing_three_min_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng_vldl_particle_conc",
+      "target": "lying_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "ng_vldl_particle_conc",
+      "target": "lying_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng_vldl_particle_conc",
+      "target": "sitting_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "ng_vldl_particle_conc",
+      "target": "sitting_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng_vldl_particle_conc",
+      "target": "sitting_second_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "ng_vldl_particle_conc",
+      "target": "sitting_second_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng_vldl_particle_conc",
+      "target": "standing_one_min_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "ng_vldl_particle_conc",
+      "target": "standing_one_min_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "ng_vldl_particle_conc",
+      "target": "standing_three_min_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "ng_vldl_particle_conc",
+      "target": "standing_three_min_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__alt_float_value",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 5
+    },
+    {
+      "source": "bt__alt_float_value",
+      "target": "liver_viscosity_vi_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__alt_float_value",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__alt_float_value",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__ast_float_value",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 5
+    },
+    {
+      "source": "bt__ast_float_value",
+      "target": "liver_viscosity_vi_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__ast_float_value",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__ast_float_value",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__ggt_float_value",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 5
+    },
+    {
+      "source": "bt__ggt_float_value",
+      "target": "liver_viscosity_vi_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__ggt_float_value",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__ggt_float_value",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__alkaline_phosphatase_float_value",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 5
+    },
+    {
+      "source": "bt__alkaline_phosphatase_float_value",
+      "target": "liver_viscosity_vi_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__alkaline_phosphatase_float_value",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__alkaline_phosphatase_float_value",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__total_bilirubin_float_value",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 5
+    },
+    {
+      "source": "bt__total_bilirubin_float_value",
+      "target": "liver_viscosity_vi_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__total_bilirubin_float_value",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__total_bilirubin_float_value",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__albumin_float_value",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 5
+    },
+    {
+      "source": "bt__albumin_float_value",
+      "target": "liver_viscosity_vi_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__albumin_float_value",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 5
+    },
+    {
+      "source": "bt__albumin_float_value",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 5
+    },
+    {
+      "source": "ahi",
+      "target": "lying_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "lying_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "sitting_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "sitting_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "sitting_second_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "sitting_second_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "standing_one_min_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "standing_one_min_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "standing_three_min_blood_pressure_systolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "standing_three_min_blood_pressure_diastolic",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "bt__glucose_float_value",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "bt__hba1c_float_value",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "cgm_cv",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "cgm_above_180",
+      "value": 4
+    },
+    {
+      "source": "ahi",
+      "target": "cgm_below_70",
+      "value": 4
+    },
+    {
+      "source": "bt__sodium_float_value",
+      "target": "lying_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__sodium_float_value",
+      "target": "lying_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__sodium_float_value",
+      "target": "sitting_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__sodium_float_value",
+      "target": "sitting_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__sodium_float_value",
+      "target": "sitting_second_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__sodium_float_value",
+      "target": "sitting_second_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__sodium_float_value",
+      "target": "standing_one_min_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__sodium_float_value",
+      "target": "standing_one_min_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__sodium_float_value",
+      "target": "standing_three_min_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__sodium_float_value",
+      "target": "standing_three_min_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__creatinine_float_value",
+      "target": "lying_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__creatinine_float_value",
+      "target": "lying_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__creatinine_float_value",
+      "target": "sitting_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__creatinine_float_value",
+      "target": "sitting_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__creatinine_float_value",
+      "target": "sitting_second_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__creatinine_float_value",
+      "target": "sitting_second_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__creatinine_float_value",
+      "target": "standing_one_min_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__creatinine_float_value",
+      "target": "standing_one_min_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__creatinine_float_value",
+      "target": "standing_three_min_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__creatinine_float_value",
+      "target": "standing_three_min_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__calcium_float_value",
+      "target": "lying_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__calcium_float_value",
+      "target": "lying_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__calcium_float_value",
+      "target": "sitting_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__calcium_float_value",
+      "target": "sitting_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__calcium_float_value",
+      "target": "sitting_second_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__calcium_float_value",
+      "target": "sitting_second_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__calcium_float_value",
+      "target": "standing_one_min_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__calcium_float_value",
+      "target": "standing_one_min_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__calcium_float_value",
+      "target": "standing_three_min_blood_pressure_systolic",
+      "value": 3
+    },
+    {
+      "source": "bt__calcium_float_value",
+      "target": "standing_three_min_blood_pressure_diastolic",
+      "value": 3
+    },
+    {
+      "source": "bt__hemoglobin_float_value",
+      "target": "ahi",
+      "value": 2
+    },
+    {
+      "source": "bt__hematocrit_float_value",
+      "target": "ahi",
+      "value": 2
+    },
+    {
+      "source": "bt__rbc_float_value",
+      "target": "ahi",
+      "value": 2
+    },
+    {
+      "source": "bt__rheumatoid_factor_float_value",
+      "target": "imt_left",
+      "value": 2
+    },
+    {
+      "source": "bt__rheumatoid_factor_float_value",
+      "target": "imt_right",
+      "value": 2
+    },
+    {
+      "source": "bt__rheumatoid_factor_float_value",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 2
+    },
+    {
+      "source": "bt__rheumatoid_factor_float_value",
+      "target": "liver_viscosity_vi_plus",
+      "value": 2
+    },
+    {
+      "source": "bt__rheumatoid_factor_float_value",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 2
+    },
+    {
+      "source": "bt__rheumatoid_factor_float_value",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 2
+    },
+    {
+      "source": "bt__rdw_float_value",
+      "target": "imt_left",
+      "value": 2
+    },
+    {
+      "source": "bt__rdw_float_value",
+      "target": "imt_right",
+      "value": 2
+    },
+    {
+      "source": "bt__rdw_float_value",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 2
+    },
+    {
+      "source": "bt__rdw_float_value",
+      "target": "liver_viscosity_vi_plus",
+      "value": 2
+    },
+    {
+      "source": "bt__rdw_float_value",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 2
+    },
+    {
+      "source": "bt__rdw_float_value",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 2
+    },
+    {
+      "source": "bt__ferritin_float_value",
+      "target": "imt_left",
+      "value": 2
+    },
+    {
+      "source": "bt__ferritin_float_value",
+      "target": "imt_right",
+      "value": 2
+    },
+    {
+      "source": "bt__ferritin_float_value",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 2
+    },
+    {
+      "source": "bt__ferritin_float_value",
+      "target": "liver_viscosity_vi_plus",
+      "value": 2
+    },
+    {
+      "source": "bt__ferritin_float_value",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 2
+    },
+    {
+      "source": "bt__ferritin_float_value",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 2
+    },
+    {
+      "source": "bt__total_protein_float_value",
+      "target": "imt_left",
+      "value": 2
+    },
+    {
+      "source": "bt__total_protein_float_value",
+      "target": "imt_right",
+      "value": 2
+    },
+    {
+      "source": "bt__total_protein_float_value",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 2
+    },
+    {
+      "source": "bt__total_protein_float_value",
+      "target": "liver_viscosity_vi_plus",
+      "value": 2
+    },
+    {
+      "source": "bt__total_protein_float_value",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 2
+    },
+    {
+      "source": "bt__total_protein_float_value",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 2
+    },
+    {
+      "source": "bt__albumin_float_value",
+      "target": "imt_left",
+      "value": 2
+    },
+    {
+      "source": "bt__albumin_float_value",
+      "target": "imt_right",
+      "value": 2
+    },
+    {
+      "source": "bt__albumin_float_value",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 2
+    },
+    {
+      "source": "bt__albumin_float_value",
+      "target": "liver_viscosity_vi_plus",
+      "value": 2
+    },
+    {
+      "source": "bt__albumin_float_value",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 2
+    },
+    {
+      "source": "bt__albumin_float_value",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 2
+    },
+    {
+      "source": "ng_omega_3_pct",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 2
+    },
+    {
+      "source": "ng_omega_3_pct",
+      "target": "liver_viscosity_vi_plus",
+      "value": 2
+    },
+    {
+      "source": "ng_omega_3_pct",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 2
+    },
+    {
+      "source": "ng_omega_3_pct",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 2
+    },
+    {
+      "source": "ng_omega_3_pct",
+      "target": "bt__hba1c_float_value",
+      "value": 2
+    },
+    {
+      "source": "ng_omega_3_pct",
+      "target": "cgm_cv",
+      "value": 2
+    },
+    {
+      "source": "ng_omega_6_pct",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 2
+    },
+    {
+      "source": "ng_omega_6_pct",
+      "target": "liver_viscosity_vi_plus",
+      "value": 2
+    },
+    {
+      "source": "ng_omega_6_pct",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 2
+    },
+    {
+      "source": "ng_omega_6_pct",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 2
+    },
+    {
+      "source": "ng_omega_6_pct",
+      "target": "bt__hba1c_float_value",
+      "value": 2
+    },
+    {
+      "source": "ng_omega_6_pct",
+      "target": "cgm_cv",
+      "value": 2
+    },
+    {
+      "source": "ng_polyunsaturated_fatty_acids_pct",
+      "target": "liver_elasticity_2D_SWE",
+      "value": 2
+    },
+    {
+      "source": "ng_polyunsaturated_fatty_acids_pct",
+      "target": "liver_viscosity_vi_plus",
+      "value": 2
+    },
+    {
+      "source": "ng_polyunsaturated_fatty_acids_pct",
+      "target": "liver_attenuation_index_att_plus",
+      "value": 2
+    },
+    {
+      "source": "ng_polyunsaturated_fatty_acids_pct",
+      "target": "liver_speed_of_sound_ssp_plus",
+      "value": 2
+    },
+    {
+      "source": "ng_polyunsaturated_fatty_acids_pct",
+      "target": "bt__hba1c_float_value",
+      "value": 2
+    },
+    {
+      "source": "ng_polyunsaturated_fatty_acids_pct",
+      "target": "cgm_cv",
+      "value": 2
+    },
+    {
+      "source": "ng_branched_chain_amino_acids",
+      "target": "bt__glucose_float_value",
+      "value": 2
+    },
+    {
+      "source": "ng_branched_chain_amino_acids",
+      "target": "bt__hba1c_float_value",
+      "value": 2
+    },
+    {
+      "source": "ng_branched_chain_amino_acids",
+      "target": "cgm_cv",
+      "value": 2
+    },
+    {
+      "source": "ng_branched_chain_amino_acids",
+      "target": "cgm_above_180",
+      "value": 2
+    },
+    {
+      "source": "ng_glutamine",
+      "target": "bt__glucose_float_value",
+      "value": 2
+    },
+    {
+      "source": "ng_glutamine",
+      "target": "bt__hba1c_float_value",
+      "value": 2
+    },
+    {
+      "source": "ng_glutamine",
+      "target": "cgm_cv",
+      "value": 2
+    },
+    {
+      "source": "ng_glutamine",
+      "target": "cgm_above_180",
+      "value": 2
+    },
+    {
+      "source": "ng_ketone_bodies",
+      "target": "bt__glucose_float_value",
+      "value": 2
+    },
+    {
+      "source": "ng_ketone_bodies",
+      "target": "bt__hba1c_float_value",
+      "value": 2
+    },
+    {
+      "source": "ng_ketone_bodies",
+      "target": "cgm_cv",
+      "value": 2
+    },
+    {
+      "source": "ng_ketone_bodies",
+      "target": "cgm_above_180",
+      "value": 2
+    },
+    {
+      "source": "ng_citrate",
+      "target": "bt__glucose_float_value",
+      "value": 2
+    },
+    {
+      "source": "ng_citrate",
+      "target": "bt__hba1c_float_value",
+      "value": 2
+    },
+    {
+      "source": "ng_citrate",
+      "target": "cgm_cv",
+      "value": 2
+    },
+    {
+      "source": "ng_citrate",
+      "target": "cgm_above_180",
+      "value": 2
+    },
+    {
+      "source": "lying_blood_pressure_systolic",
+      "target": "imt_left",
+      "value": 5
+    },
+    {
+      "source": "lying_blood_pressure_systolic",
+      "target": "imt_right",
+      "value": 5
+    },
+    {
+      "source": "lying_blood_pressure_diastolic",
+      "target": "imt_left",
+      "value": 5
+    },
+    {
+      "source": "lying_blood_pressure_diastolic",
+      "target": "imt_right",
+      "value": 5
+    },
+    {
+      "source": "sitting_blood_pressure_systolic",
+      "target": "imt_left",
+      "value": 5
+    },
+    {
+      "source": "sitting_blood_pressure_systolic",
+      "target": "imt_right",
+      "value": 5
+    },
+    {
+      "source": "sitting_blood_pressure_diastolic",
+      "target": "imt_left",
+      "value": 5
+    },
+    {
+      "source": "sitting_blood_pressure_diastolic",
+      "target": "imt_right",
+      "value": 5
+    },
+    {
+      "source": "sitting_second_blood_pressure_systolic",
+      "target": "imt_left",
+      "value": 5
+    },
+    {
+      "source": "sitting_second_blood_pressure_systolic",
+      "target": "imt_right",
+      "value": 5
+    },
+    {
+      "source": "sitting_second_blood_pressure_diastolic",
+      "target": "imt_left",
+      "value": 5
+    },
+    {
+      "source": "sitting_second_blood_pressure_diastolic",
+      "target": "imt_right",
+      "value": 5
+    },
+    {
+      "source": "standing_one_min_blood_pressure_systolic",
+      "target": "imt_left",
+      "value": 5
+    },
+    {
+      "source": "standing_one_min_blood_pressure_systolic",
+      "target": "imt_right",
+      "value": 5
+    },
+    {
+      "source": "standing_one_min_blood_pressure_diastolic",
+      "target": "imt_left",
+      "value": 5
+    },
+    {
+      "source": "standing_one_min_blood_pressure_diastolic",
+      "target": "imt_right",
+      "value": 5
+    },
+    {
+      "source": "standing_three_min_blood_pressure_systolic",
+      "target": "imt_left",
+      "value": 5
+    },
+    {
+      "source": "standing_three_min_blood_pressure_systolic",
+      "target": "imt_right",
+      "value": 5
+    },
+    {
+      "source": "standing_three_min_blood_pressure_diastolic",
+      "target": "imt_left",
+      "value": 5
+    },
+    {
+      "source": "standing_three_min_blood_pressure_diastolic",
+      "target": "imt_right",
+      "value": 5
+    }
+  ]
+}
