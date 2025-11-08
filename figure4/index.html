@@ -124,7 +124,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     html, body { height: 100%; }
-    body { margin: 0; background: #000; color: #eee; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
+    body { margin: 0; background: #eef2ff; color: #eee; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
     #3d-graph { position: fixed; inset: 0 0 0 0; } 
   </style>
 
@@ -143,13 +143,14 @@
     let hoverNode = null;
 
     const Graph = new ForceGraph3D(document.getElementById('3d-graph'))
-      .backgroundColor('#000')
+      .backgroundColor('#eef2ff')
       .linkDirectionalArrowLength(3.5)
       .linkDirectionalArrowRelPos(1)
       .linkCurvature(0.25)
       .linkDirectionalParticles(link => highlightLinks.has(link) ? 4 : 0)
       .linkDirectionalParticleWidth(4)
       .nodeAutoColorBy('group')
+      .linkColor(() => '#BBBBBB')
       .linkWidth(link => highlightLinks.has(link) ? 4 : 1)
       .nodeThreeObject(node => {
         const sprite = new SpriteText(String(node.id));
@@ -287,3 +288,4 @@
   </script>
 </body>
 </html>
+
