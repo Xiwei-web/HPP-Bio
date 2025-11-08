@@ -226,7 +226,7 @@
     }
 
     // ====== 聚焦到节点（点击或自动） ======
-    function focusNode(node, distance = 400, duration = 4000) {
+    function focusNode(node, distance = 600, duration = 4000) {
       const x = node.x || 0, y = node.y || 0, z = node.z || 0;
       const distRatio = 1 + distance / Math.hypot(x, y, z || 1);
       const newPos = (x || y || z)
@@ -252,7 +252,7 @@
 
     // ====== 随机自动 focus （含面板同步）======
     let autoFocusTimer = null, lastNodeId = null;
-    function startAutoFocus(intervalMs = 5000, distance = 400, duration = 4000) {
+    function startAutoFocus(intervalMs = 5000, distance = 600, duration = 4000) {
       stopAutoFocus();
       const hop = () => {
         const nodes = Graph.graphData()?.nodes || [];
