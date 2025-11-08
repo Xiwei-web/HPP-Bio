@@ -264,7 +264,7 @@
     });
 
     // ---------- 加载数据 ----------
-    fetch('../hpp_causal_network_fixed.json') 
+    fetch('./hpp_causal_network_fixed.json') 
       .then(r => r.json())
       .then(data => {
         const nodeById = new Map(data.nodes.map(n => [n.id, n]));
