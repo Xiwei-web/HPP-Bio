@@ -25,6 +25,7 @@
       .nodeLabel(node => `${node.user}: ${node.description}`)
       // ✅ 添加箭头
       .linkDirectionalArrowLength(3.5)
+      .linkColor(() => '#BBBBBB')
       .linkDirectionalArrowRelPos(1)
       // ✅ 改为文字节点
       .nodeThreeObject(node => {
@@ -99,6 +100,7 @@
       // ✅ 添加箭头
       .linkDirectionalArrowLength(3.5)
       .linkDirectionalArrowRelPos(1)
+      .backgroundColor('#eef2ff')
       // ✅ 改为文字节点
       .nodeThreeObject(node => {
         const sprite = new SpriteText(node.user);
