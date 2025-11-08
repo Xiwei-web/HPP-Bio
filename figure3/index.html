@@ -1,0 +1,150 @@
+<!-- <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>3D Force Graph - Click to Focus + Text Nodes + Arrows</title>
+  <style>
+    body { margin: 0; }
+    #3d-graph { width: 100vw; height: 100vh; }
+  </style>
+
+  <script src="//cdn.jsdelivr.net/npm/3d-force-graph"></script>
+</head>
+
+<body>
+  <div id="3d-graph"></div>
+
+  <script type="module">
+    import SpriteText from "https://esm.sh/three-spritetext";
+
+    const elem = document.getElementById('3d-graph');
+
+    const Graph = new ForceGraph3D(elem)
+      .jsonUrl('../blocks3.json')
+      .nodeAutoColorBy('user')
+      .nodeLabel(node => `${node.user}: ${node.description}`)
+      // ✅ 添加箭头
+      .linkDirectionalArrowLength(3.5)
+      .linkDirectionalArrowRelPos(1)
+      // ✅ 改为文字节点
+      .nodeThreeObject(node => {
+        const sprite = new SpriteText(node.user); // 显示用户名或任意字段
+        sprite.color = node.color;                // 与自动颜色一致
+        sprite.material.depthWrite = false;       // 文字背景透明
+        sprite.textHeight = 8;                    // 🔸 控制字体大小（默认约8~10）
+        sprite.center.y = -0.5;                   // 稍微调整垂直位置
+        return sprite;
+      })
+      .nodeThreeObjectExtend(true)
+
+      // ==============================
+      // ✅ 让节点更聚拢 (核心修改)
+      // ==============================
+      // 减弱节点间的排斥力 (charge force)。
+      // 默认值通常是 -30 左右。将其设置得更接近 0 (例如 -15)，会使排斥力变小，节点因此靠得更近。
+      // .d3Force('charge', d3.forceManyBody().strength(-100))
+
+      // ==============================
+      // 悬停时改变鼠标样式
+      .onNodeHover(node => { elem.style.cursor = node ? 'pointer' : null; })
+      // 点击聚焦（支持 Ctrl/Cmd/中键打开链接）
+      .onNodeClick((node, event) => {
+        const url = `https://bl.ocks.org/${node.user}/${node.id}`;
+
+        // 若按住 Ctrl/Cmd 或用中键，则保持原来“新开标签页”的行为
+        if (event && (event.ctrlKey || event.metaKey || event.button === 1)) {
+          window.open(url, '_blank');
+          return;
+        }
+
+        // —— 否则执行聚焦 —— //
+        const distance = 300;
+        const x = node.x || 0, y = node.y || 0, z = node.z || 0;
+        const distRatio = 1 + distance / Math.hypot(x, y, z || 1);
+        const newPos = (x || y || z)
+          ? { x: x * distRatio, y: y * distRatio, z: z * distRatio }
+          : { x: distance, y: distance, z: distance };
+
+        Graph.cameraPosition(newPos, node, 1500);
+      });
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>3D Force Graph - 自动旋转 + 文本节点 + 箭头</title>
+  <style>
+    body { margin: 0; }
+    #3d-graph { width: 100vw; height: 100vh; }
+  </style>
+
+  <script src="//cdn.jsdelivr.net/npm/3d-force-graph"></script>
+</head>
+
+<body>
+  <div id="3d-graph"></div>
+
+  <script type="module">
+    import SpriteText from "https://esm.sh/three-spritetext";
+
+    const elem = document.getElementById('3d-graph');
+
+    const Graph = new ForceGraph3D(elem)
+      .jsonUrl('../blocks3.json')
+      .nodeAutoColorBy('user')
+      .nodeLabel(node => `${node.user}: ${node.description}`)
+      // ✅ 添加箭头
+      .linkDirectionalArrowLength(3.5)
+      .linkDirectionalArrowRelPos(1)
+      // ✅ 改为文字节点
+      .nodeThreeObject(node => {
+        const sprite = new SpriteText(node.user);
+        sprite.color = node.color;
+        sprite.material.depthWrite = false;
+        sprite.textHeight = 8;
+        sprite.center.y = -0.5;
+        return sprite;
+      })
+      .nodeThreeObjectExtend(true)
+      // 悬停时改变鼠标样式
+      .onNodeHover(node => { elem.style.cursor = node ? 'pointer' : null; })
+      // 点击聚焦
+      .onNodeClick((node, event) => {
+        const url = `https://bl.ocks.org/${node.user}/${node.id}`;
+        if (event && (event.ctrlKey || event.metaKey || event.button === 1)) {
+          window.open(url, '_blank');
+          return;
+        }
+        const distance = 600;
+        const x = node.x || 0, y = node.y || 0, z = node.z || 0;
+        const distRatio = 1 + distance / Math.hypot(x, y, z || 1);
+        const newPos = (x || y || z)
+          ? { x: x * distRatio, y: y * distRatio, z: z * distRatio }
+          : { x: distance, y: distance, z: distance };
+        Graph.cameraPosition(newPos, node, 1500);
+      });
+
+    // ==============================
+    // ✅ 自动旋转摄像机
+    // ==============================
+    const ORBIT_DISTANCE = 2200;      // 镜头距离中心的半径
+    const STEP = Math.PI / 1200;      // 每帧旋转角度（越小越慢）
+    const TICK_MS = 16;              // 刷新间隔（约60fps）
+    let angle = 0;
+
+    // 初始化摄像机位置
+    Graph.cameraPosition({ x: 0, y: 0, z: ORBIT_DISTANCE });
+
+    // 启动自动旋转
+    setInterval(() => {
+      angle += STEP;
+      const x = ORBIT_DISTANCE * Math.sin(angle);
+      const z = ORBIT_DISTANCE * Math.cos(angle);
+      Graph.cameraPosition({ x, y: 0, z });
+    }, TICK_MS);
+  </script>
+</body>
+</html>
