@@ -1,0 +1,288 @@
+<!-- <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>3D Causal Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    html, body { height: 100%; }
+    body { margin: 0; background: #000; color: #eee; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
+
+    #3d-graph { position: fixed; inset: 0 0 0 0; } 
+  </style>
+
+  <script src="//cdn.jsdelivr.net/npm/3d-force-graph"></script>
+</head>
+
+<body>
+  <div id="3d-graph"></div>
+
+  <script type="module">
+    import SpriteText from "https://esm.sh/three-spritetext";
+
+    // ========= Group Colors: Automatic =========
+    const highlightNodes = new Set();
+    const highlightLinks = new Set();
+    let hoverNode = null;
+
+    const Graph = new ForceGraph3D(document.getElementById('3d-graph'))
+      .backgroundColor('#000')
+      .linkDirectionalArrowLength(3.5)
+      .linkDirectionalArrowRelPos(1)
+      .linkCurvature(0.25)
+      .linkDirectionalParticles(link => highlightLinks.has(link) ? 4 : 0)
+      .linkDirectionalParticleWidth(4)
+      .nodeAutoColorBy('group') // Automatically color by 'group'
+      .linkWidth(link => highlightLinks.has(link) ? 4 : 1)
+      .nodeThreeObject(node => {
+        const sprite = new SpriteText(String(node.id));
+        sprite.material.depthWrite = false;
+        sprite.color = node.color; // Set by nodeAutoColorBy
+        sprite.textHeight = 8;
+        sprite.center.y = -0.6;
+        return sprite;
+      })
+      .nodeThreeObjectExtend(true);
+
+    // === Hover Interaction (Node) ===
+    Graph.onNodeHover(node => {
+      if ((!node && !highlightNodes.size) || node === hoverNode) return;
+
+      highlightNodes.clear();
+      if (node) {
+        highlightNodes.add(node);
+        node.neighbors?.forEach(nei => highlightNodes.add(nei));
+        node.links?.forEach(l => highlightLinks.add(l));
+      }
+      hoverNode = node || null;
+      updateHighlight();
+    });
+
+    // === Hover Interaction (Link) ===
+    Graph.onLinkHover(link => {
+      highlightNodes.clear();
+      highlightLinks.clear();
+      if (link) {
+        highlightLinks.add(link);
+        highlightNodes.add(link.source);
+        highlightNodes.add(link.target);
+      }
+      updateHighlight();
+    });
+
+    function updateHighlight() {
+      Graph
+        .nodeColor(node => {
+          if (highlightNodes.has(node)) {
+            return node === hoverNode ? '#ff0000' : '#ffa000';
+          }
+          return node.color;
+        })
+        .linkWidth(Graph.linkWidth())
+        .linkDirectionalParticles(Graph.linkDirectionalParticles());
+    }
+
+    Graph.onNodeClick(node => {
+      // Focus camera
+      const distance = 800; // Camera distance from target
+      const distRatio = 1 + distance / Math.hypot(node.x || 0, node.y || 0, node.z || 0);
+      const newPos = (node.x || node.y || node.z)
+        ? { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }
+        : { x: 0, y: 0, z: distance };
+
+      Graph.cameraPosition(newPos, node, 3000);
+    });
+
+    fetch('../miserables.json') 
+      .then(r => r.json())
+      .then(data => {
+        const nodeById = new Map(data.nodes.map(n => [n.id, n]));
+        data.nodes.forEach(n => { n.neighbors = []; n.links = []; });
+        data.links.forEach(l => {
+          const a = typeof l.source === 'object' ? l.source : nodeById.get(l.source);
+          const b = typeof l.target === 'object' ? l.target : nodeById.get(l.target);
+          if (!a || !b) return;
+          a.neighbors.push(b); b.neighbors.push(a);
+          a.links.push(l);    b.links.push(l);
+        });
+
+        Graph.graphData(data);
+        Graph.d3Force('charge').strength(-400);
+      });
+  </script>
+</body>
+</html> -->
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>3D Causal Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    html, body { height: 100%; }
+    body { margin: 0; background: #000; color: #eee; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
+    #3d-graph { position: fixed; inset: 0 0 0 0; } 
+  </style>
+
+  <script src="//cdn.jsdelivr.net/npm/3d-force-graph"></script>
+</head>
+
+<body>
+  <div id="3d-graph"></div>
+
+  <script type="module">
+    import SpriteText from "https://esm.sh/three-spritetext";
+
+    // ========= Group Colors: Automatic =========
+    const highlightNodes = new Set();
+    const highlightLinks = new Set();
+    let hoverNode = null;
+
+    const Graph = new ForceGraph3D(document.getElementById('3d-graph'))
+      .backgroundColor('#000')
+      .linkDirectionalArrowLength(3.5)
+      .linkDirectionalArrowRelPos(1)
+      .linkCurvature(0.25)
+      .linkDirectionalParticles(link => highlightLinks.has(link) ? 4 : 0)
+      .linkDirectionalParticleWidth(4)
+      .nodeAutoColorBy('group')
+      .linkWidth(link => highlightLinks.has(link) ? 4 : 1)
+      .nodeThreeObject(node => {
+        const sprite = new SpriteText(String(node.id));
+        sprite.material.depthWrite = false;
+        sprite.color = node.color; // Set by nodeAutoColorBy
+        sprite.textHeight = 8;
+        sprite.center.y = -0.6;
+        return sprite;
+      })
+      .nodeThreeObjectExtend(true);
+
+    // === Hover Interaction (Node) ===
+    Graph.onNodeHover(node => {
+      if ((!node && !highlightNodes.size) || node === hoverNode) return;
+
+      highlightNodes.clear();
+      if (node) {
+        highlightNodes.add(node);
+        node.neighbors?.forEach(nei => highlightNodes.add(nei));
+        node.links?.forEach(l => highlightLinks.add(l));
+      }
+      hoverNode = node || null;
+      updateHighlight();
+    });
+
+    // === Hover Interaction (Link) ===
+    Graph.onLinkHover(link => {
+      highlightNodes.clear();
+      highlightLinks.clear();
+      if (link) {
+        highlightLinks.add(link);
+        highlightNodes.add(link.source);
+        highlightNodes.add(link.target);
+      }
+      updateHighlight();
+    });
+
+    function updateHighlight() {
+      Graph
+        .nodeColor(node => {
+          if (highlightNodes.has(node)) {
+            return node === hoverNode ? '#ff0000' : '#ffa000';
+          }
+          return node.color;
+        })
+        .linkWidth(Graph.linkWidth())
+        .linkDirectionalParticles(Graph.linkDirectionalParticles());
+    }
+
+    // ====== 原来的“点击聚焦”（保留；你也可以删掉）======
+    Graph.onNodeClick(node => {
+      focusNode(node, 800, 3000);
+    });
+
+    // ---------- 🔁 自动随机跳跃：工具函数 ----------
+    function focusNode(node, distance = 800, duration = 3000) {
+      // 计算目标相机位置：从该 node 退后一定距离
+      const x = node.x || 0, y = node.y || 0, z = node.z || 0;
+      const distRatio = 1 + distance / Math.hypot(x, y, z || 1);
+      const newPos = (x || y || z)
+        ? { x: x * distRatio, y: y * distRatio, z: z * distRatio }
+        : { x: 0, y: 0, z: distance };
+
+      Graph.cameraPosition(newPos, node, duration);
+    }
+
+    // ---------- 🔁 自动随机跳跃：核心逻辑 ----------
+    let autoHopTimer = null;
+    let lastNodeId = null;
+
+    function startAutoHop(intervalMs = 4000, distance = 800, duration = 2000) {
+      stopAutoHop(); // 防止重复定时
+      const hop = () => {
+        const data = Graph.graphData?.();
+        const nodes = data?.nodes || [];
+        if (!nodes.length) {
+          // 数据未到位，稍后重试
+          autoHopTimer = setTimeout(hop, 1000);
+          return;
+        }
+
+        // 随机选一个与上次不同的节点
+        let pick = null;
+        if (nodes.length === 1) {
+          pick = nodes[0];
+        } else {
+          for (let tries = 0; tries < 5; tries++) {
+            const cand = nodes[Math.floor(Math.random() * nodes.length)];
+            if (cand.id !== lastNodeId) { pick = cand; break; }
+          }
+          if (!pick) pick = nodes[Math.floor(Math.random() * nodes.length)];
+        }
+        lastNodeId = pick.id;
+
+        focusNode(pick, distance, duration);
+        autoHopTimer = setTimeout(hop, intervalMs);
+      };
+      hop();
+    }
+
+    function stopAutoHop() {
+      if (autoHopTimer) {
+        clearTimeout(autoHopTimer);
+        autoHopTimer = null;
+      }
+    }
+
+    // （可选）当用户手动点击时，短暂停止自动跳跃以避免“打架”
+    Graph.onNodeClick(() => {
+      // 如需不停也可以删掉下面三行
+      stopAutoHop();
+      setTimeout(() => startAutoHop(), 3500);
+    });
+
+    // ---------- 加载数据 ----------
+    fetch('../hpp_causal_network_fixed.json') 
+      .then(r => r.json())
+      .then(data => {
+        const nodeById = new Map(data.nodes.map(n => [n.id, n]));
+        data.nodes.forEach(n => { n.neighbors = []; n.links = []; });
+        data.links.forEach(l => {
+          const a = typeof l.source === 'object' ? l.source : nodeById.get(l.source);
+          const b = typeof l.target === 'object' ? l.target : nodeById.get(l.target);
+          if (!a || !b) return;
+          a.neighbors.push(b); b.neighbors.push(a);
+          a.links.push(l);    b.links.push(l);
+        });
+
+        Graph.graphData(data);
+        Graph.d3Force('charge').strength(-400);
+
+        // ---------- 🔁 启动自动随机跳跃 ----------
+        startAutoHop(4000, 400, 2000); // 间隔4秒、距离800、动画2秒
+      });
+  </script>
+</body>
+</html>
