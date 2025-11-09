@@ -290,7 +290,7 @@
     }
 
     // ====== 加载数据并启动 ======
-    fetch('../hpp_causal_network_fixed_causalized_filled.json')
+    fetch('./hpp_causal_network_fixed_causalized_filled.json')
       .then(r => r.json())
       .then(data => {
         const nodeById = new Map(data.nodes.map(n => [n.id, n]));
