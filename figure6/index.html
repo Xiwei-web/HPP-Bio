@@ -8,7 +8,7 @@
     html, body { height: 100%; }
 
     /* ✅ 核心：让全站 rem 随视口宽度缩放（最小12px，最大16px） */
-    html { font-size: clamp(8px, 1.1vw, 16px); } /* ← 调整范围看下文 */
+    html { font-size: clamp(4px, 1.1vw, 10px); } /* ← 调整范围看下文 */
 
     body {
       margin: 0;
@@ -31,7 +31,7 @@
     }
     #node-panel {
       flex: 2 1 0%;             /* 2 份 */
-      max-width: 40rem;         /* 可选：面板上限宽度 */
+      max-width: 80rem;         /* 可选：面板上限宽度 */
       min-width: 0rem;          /* 可选：面板最小宽度 */
       height: 100%;
       overflow-y: auto;
