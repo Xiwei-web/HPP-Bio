@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>3D Causal Network — Responsive 8:2 Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: #eef2ff;      /* 页面底色 */
+      color: #333;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    }
+
+    /* ====== 关键：左右两列自适应（8:2） ====== */
+    .app {
+      display: flex;
+      height: 100vh;            /* 占满视口高度 */
+      width: 100vw;
+      overflow: hidden;
+    }
+    #graph-wrap {
+      flex: 8 1 0%;             /* 8 份 */
+      min-width: 0;             /* 防止内容把容器撑爆 */
+      position: relative;       /* 供内部绝对定位（如需要） */
+    }
+    #node-panel {
+      flex: 2 1 0%;             /* 2 份 */
+      max-width: 40rem;         /* 可选：面板上限宽度 */
+      min-width: 16rem;         /* 可选：面板最小宽度 */
+      height: 100%;
+      overflow-y: auto;
+      box-shadow: -12px 0 24px rgba(0,0,0,0.08);
+      background: #eef2ff; /* 浅色面板 */
+      color: #1f2937;
+      backdrop-filter: blur(4px);
+      padding: 16px 20px 24px;
+    }
+
+    /* 面板内部样式（与之前一致的浅色风格） */
+    #panel-close {
+      position: sticky; top: 0; float: right;
+      background: transparent; color: #6b7280; border: 0; font-size: 18px; cursor: pointer;
+    }
+    #node-panel h2 { margin: 8px 0 6px; font-size: 18px; color: #111827; }
+    #node-panel a { color: #2563eb; word-break: break-all; }
+    #node-panel .meta { font-size: 12px; color: #6b7280; margin-bottom: 12px; }
+    #node-panel .pill {
+      display: inline-block; padding: 2px 8px; border: 1px solid #e5e7eb;
+      border-radius: 999px; margin: 0 8px 8px 0; font-size: 12px; color:#374151;
+      background: #ffffffaa;
+    }
+    #panel-content ul { margin: 4px 0; padding-left: 20px; list-style-type: none; }
+    #panel-content ul li { padding: 2px 0; font-size: 14px; }
+    #panel-content ul li strong { color: #2563eb; margin-right: 6px; }
+    #panel-content ul ul { list-style-type: disc; }
+
+    /* 小屏：改为上下堆叠，面板高度占 40vh */
+    @media (max-width: 900px) {
+      .app { flex-direction: column; }
+      #graph-wrap { flex: none; height: 60vh; width: 100%; }
+      #node-panel { flex: none; height: 40vh; width: 100%; max-width: none; }
+    }
+  </style>
+
+  <script src="//cdn.jsdelivr.net/npm/3d-force-graph"></script>
+</head>
+
+<body>
+  <!-- 左右两列容器 -->
+  <div class="app">
+    <div id="graph-wrap"></div>
+    <aside id="node-panel">
+      <button id="panel-close" title="Collapse">✕</button>
+      <div id="panel-content">请选择或等待自动聚焦一个节点…</div>
+    </aside>
+  </div>
+
+  <script type="module">
+    import SpriteText from "https://esm.sh/three-spritetext";
+
+    // ====== 状态 ======
+    const highlightNodes = new Set();
+    const highlightLinks = new Set();
+    let hoverNode = null;
+    let activeNode = null;
+
+    const wrap = document.getElementById('graph-wrap');
+
+    // ====== 单一颜色来源（确保节点球体与文字一致） ======
+    const COLOR_BY = 'group';  // 可改为 'user' 等字段
+    const PALETTE = ["#1f77b4","#ff7f0e","#2ca02c","#d62728","#9467bd",
+                     "#8c564b","#e377c2","#7f7f7f","#bcbd22","#17becf"];
+    const colorMap = new Map();
+    function colorFor(val) {
+      const key = val == null ? '__NA__' : String(val);
+      if (!colorMap.has(key)) colorMap.set(key, PALETTE[colorMap.size % PALETTE.length]);
+      return colorMap.get(key);
+    }
+
+    // ====== 创建 Graph，并绑定到容器尺寸 ======
+    function sizeGraphToWrap(G) {
+      const w = wrap.clientWidth;
+      const h = wrap.clientHeight;
+      G.width(w).height(h);
+    }
+
+    const Graph = new ForceGraph3D(wrap)
+      .backgroundColor('#eef2ff')
+      .width(wrap.clientWidth)
+      .height(wrap.clientHeight)
+      .linkDirectionalArrowLength(3.5)
+      .linkDirectionalArrowRelPos(1)
+      .linkCurvature(0.25)
+      .linkDirectionalParticles(l => highlightLinks.has(l) ? 4 : 0)
+      .linkDirectionalParticleWidth(4)
+      .linkColor(l => highlightLinks.has(l) ? '#666666' : '#BBBBBB')
+      .linkWidth(l => highlightLinks.has(l) ? 4 : 1)
+      .nodeThreeObject(node => {
+        const label = String(node.id);  // 也可改为 node.user / node.title
+        const sprite = new SpriteText(label);
+        sprite.material.depthWrite = false;
+
+        const base = colorFor(node[COLOR_BY]);
+        sprite.color = base;
+        sprite.textHeight = 8;
+        sprite.center.y = -0.6;
+
+        node.__sprite     = sprite;
+        node.__baseColor  = base;
+        node.__paintColor = base;
+        return sprite;
+      })
+      .nodeThreeObjectExtend(true)
+      .nodeColor(n => n.__paintColor)
+      .onNodeHover(node => {
+        if ((!node && !highlightNodes.size) || node === hoverNode) return;
+        hoverNode = node || null;
+        if (hoverNode) fillHighlightFromNode(hoverNode);
+        else fillHighlightFromNode(activeNode);
+        updateHighlight();
+        wrap.style.cursor = node ? 'pointer' : 'default';
+      })
+      .onLinkHover(link => {
+        highlightNodes.clear();
+        highlightLinks.clear();
+        if (link) {
+          highlightLinks.add(link);
+          highlightNodes.add(link.source);
+          highlightNodes.add(link.target);
+        } else {
+          if (hoverNode) fillHighlightFromNode(hoverNode);
+          else fillHighlightFromNode(activeNode);
+        }
+        updateHighlight();
+      });
+
+    // 自适应尺寸：窗口变化时调整画布
+    window.addEventListener('resize', () => sizeGraphToWrap(Graph));
+    // 小屏切换到上下布局时，graph-wrap 的高度也会变，使用 rAF 确保计算到最新布局
+    const ro = new ResizeObserver(() => requestAnimationFrame(() => sizeGraphToWrap(Graph)));
+    ro.observe(wrap);
+
+    // ====== 同步着色 ======
+    function paintNode(n, hex) {
+      n.__paintColor = hex;
+      if (n.__sprite && n.__sprite.color !== hex) n.__sprite.color = hex;
+    }
+    function updateHighlight() {
+      const primary = hoverNode || activeNode;
+      const nodes = Graph.graphData()?.nodes || [];
+      for (const n of nodes) {
+        if (highlightNodes.has(n)) {
+          paintNode(n, n === primary ? '#ff0000' : '#ffa000');
+        } else {
+          paintNode(n, n.__baseColor);
+        }
+      }
+      Graph
+        .nodeColor(n => n.__paintColor)
+        .linkColor(l => highlightLinks.has(l) ? '#666666' : '#BBBBBB')
+        .linkWidth(Graph.linkWidth())
+        .linkDirectionalParticles(Graph.linkDirectionalParticles());
+    }
+    function fillHighlightFromNode(node) {
+      highlightNodes.clear();
+      highlightLinks.clear();
+      if (!node) return;
+      highlightNodes.add(node);
+      node.neighbors?.forEach(nei => highlightNodes.add(nei));
+      node.links?.forEach(l => highlightLinks.add(l));
+    }
+
+    // ====== 面板（浅色） ======
+    const panelEl = document.getElementById('node-panel');
+    const panelContentEl = document.getElementById('panel-content');
+    document.getElementById('panel-close').onclick = () => {
+      // 简易“收起/展开”：收起后把面板宽度设为 0 占位；再点一次恢复
+      if (panelEl.style.display !== 'none') {
+        panelEl.style.display = 'none';
+        wrap.style.flex = '1 1 0%'; // 让画布占满
+      } else {
+        panelEl.style.display = '';
+        wrap.style.flex = '8 1 0%'; // 恢复 8:2
+      }
+      sizeGraphToWrap(Graph);
+    };
+
+    function objectToHtml(obj) {
+      if (obj === null) return '<em>null</em>';
+      if (typeof obj !== 'object') return String(obj);
+      if (Array.isArray(obj)) return `<ul>${obj.map(item => `<li>${objectToHtml(item)}</li>`).join('')}</ul>`;
+      return `<ul>${Object.entries(obj).map(([k,v]) => `<li><strong>${k}:</strong> ${objectToHtml(v)}</li>`).join('')}</ul>`;
+    }
+    function showNodeInfo(node) {
+      if (node?.content) {
+        if (typeof node.content === 'string') {
+          panelContentEl.innerHTML = node.content;
+        } else if (typeof node.content === 'object') {
+          const html = objectToHtml(node.content);
+          panelContentEl.innerHTML = `
+            <h2>${node.id}</h2>
+            <div class="meta">
+              <span class="pill">Group: ${node.group ?? 'N/A'}</span>
+              ${node.neighbors ? `<span class="pill">Degree: ${node.neighbors.length}</span>` : ''}
+            </div>
+            <hr style="border:none; border-top:1px solid #e5e7eb; margin:16px 0;">
+            ${html}
+          `;
+        }
+      } else {
+        const degree = node.neighbors ? node.neighbors.length : 0;
+        const title = node.title || String(node.id);
+        const desc = node.desc || '';
+        const url = node.url;
+        panelContentEl.innerHTML = `
+          <h2>${title}</h2>
+          <div class="meta">
+            <span class="pill">id: ${String(node.id)}</span>
+            <span class="pill">group: ${node.group ?? '-'}</span>
+            <span class="pill">degree: ${degree}</span>
+          </div>
+          ${desc ? `<p>${desc}</p>` : ''}
+          ${url ? `<p><a href="${url}" target="_blank" rel="noopener">More Info ↗</a></p>` : ''}
+        `;
+      }
+    }
+
+    // ====== 聚焦与自动聚焦 ======
+    function focusNode(node, distance = 600, duration = 3000) {
+      const x = node.x || 0, y = node.y || 0, z = node.z || 0;
+      const distRatio = 1 + distance / Math.hypot(x, y, z || 1);
+      const newPos = (x || y || z)
+        ? { x: x * distRatio, y: y * distRatio, z: z * distRatio }
+        : { x: 0, y: 0, z: distance };
+      Graph.cameraPosition(newPos, node, duration);
+    }
+    function setActiveNode(node) {
+      activeNode = node || null;
+      if (!hoverNode) { fillHighlightFromNode(activeNode); updateHighlight(); }
+      if (node) showNodeInfo(node);
+    }
+    Graph.onNodeClick(node => { setActiveNode(node); focusNode(node, 600, 3000); });
+
+    let autoFocusTimer = null, lastNodeId = null;
+    function startAutoFocus(intervalMs = 5000, distance = 600, duration = 2000) {
+      stopAutoFocus();
+      const hop = () => {
+        const nodes = Graph.graphData()?.nodes || [];
+        if (!nodes.length) { autoFocusTimer = setTimeout(hop, 800); return; }
+        let pick = null;
+        if (nodes.length === 1) pick = nodes[0];
+        else {
+          for (let i = 0; i < 5; i++) {
+            const cand = nodes[Math.floor(Math.random() * nodes.length)];
+            if (cand.id !== lastNodeId) { pick = cand; break; }
+          }
+          if (!pick) pick = nodes[Math.floor(Math.random() * nodes.length)];
+        }
+        lastNodeId = pick.id;
+        setActiveNode(pick);
+        focusNode(pick, distance, duration);
+        autoFocusTimer = setTimeout(hop, intervalMs);
+      };
+      hop();
+    }
+    function stopAutoFocus() {
+      if (autoFocusTimer) { clearTimeout(autoFocusTimer); autoFocusTimer = null; }
+    }
+
+    // ====== 加载数据并启动 ======
+    fetch('../hpp_causal_network_fixed_causalized_filled.json')
+      .then(r => r.json())
+      .then(data => {
+        const nodeById = new Map(data.nodes.map(n => [n.id, n]));
+        data.nodes.forEach(n => { n.neighbors = []; n.links = []; });
+        data.links.forEach(l => {
+          const a = typeof l.source === 'object' ? l.source : nodeById.get(l.source);
+          const b = typeof l.target === 'object' ? l.target : nodeById.get(l.target);
+          if (!a || !b) return;
+          a.neighbors.push(b); b.neighbors.push(a);
+          a.links.push(l);    b.links.push(l);
+        });
+
+        Graph.graphData(data);
+        Graph.d3Force('charge').strength(-400);
+
+        // 初次尺寸同步（有些浏览器需要）
+        sizeGraphToWrap(Graph);
+
+        // 自动轮播聚焦
+        startAutoFocus(5000, 600, 2000);
+      });
+  </script>
+</body>
+</html>
